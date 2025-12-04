@@ -1,0 +1,3336 @@
+{
+  "views": {
+    "111": 1,
+    "1111": 7,
+    "auto-rob-hub": 1580,
+    "private-chat": 640,
+    "cut-trees": 1,
+    "111lkllklkl": 27,
+    "blackhawk-rescue-mission": 2,
+    "westbound": 1,
+    "anime-eternal-script": 3,
+    "plants-vs-brainrot": 2,
+    "jump-and-splash": 1,
+    "anime-ranger-x-script": 1,
+    "cut-trees-script": 1,
+    "blox-fruits-script": 1,
+    "blockspin-script": 1,
+    "grow-a-garden-script": 3,
+    "survive-the-sniper": 2,
+    "prison-life-script": 6
+  },
+  "viewTimeline": [
+    {
+      "date": "2025-10-03",
+      "count": 120
+    },
+    {
+      "date": "2025-10-04",
+      "count": 140
+    },
+    {
+      "date": "2025-10-05",
+      "count": 175
+    },
+    {
+      "date": "2025-10-06",
+      "count": 210
+    },
+    {
+      "date": "2025-10-07",
+      "count": 260
+    },
+    {
+      "date": "2025-10-08",
+      "count": 310
+    },
+    {
+      "date": "2025-10-09",
+      "count": 355
+    },
+    {
+      "date": "2025-10-23",
+      "count": 4
+    },
+    {
+      "date": "2025-10-27",
+      "count": 11
+    },
+    {
+      "date": "2025-10-29",
+      "count": 2
+    },
+    {
+      "date": "2025-10-30",
+      "count": 22
+    },
+    {
+      "date": "2025-10-31",
+      "count": 3
+    },
+    {
+      "date": "2025-11-01",
+      "count": 4
+    },
+    {
+      "date": "2025-11-04",
+      "count": 6
+    },
+    {
+      "date": "2025-11-09",
+      "count": 8
+    }
+  ],
+  "orders": [
+    {
+      "id": "#30219",
+      "userId": "sample-alex",
+      "username": "Alex#123",
+      "amount": 7.99,
+      "currency": "USD",
+      "product": "Auto Rob Hub",
+      "status": "paid",
+      "createdAt": "2025-10-09T09:10:00.000Z",
+      "payment": {
+        "provider": "demo",
+        "providerLabel": "Demo Checkout",
+        "invoiceId": null,
+        "invoiceUrl": null,
+        "status": "finished",
+        "payCurrency": "USD",
+        "payAmount": 7.99,
+        "actuallyPaid": 7.99,
+        "createdAt": "2025-10-09T09:10:00.000Z",
+        "updatedAt": "2025-10-09T09:10:00.000Z"
+      }
+    },
+    {
+      "id": "#30220",
+      "userId": "sample-julian",
+      "username": "Julian",
+      "amount": 14.5,
+      "currency": "USD",
+      "product": "Private Chat",
+      "status": "paid",
+      "createdAt": "2025-10-09T09:15:00.000Z",
+      "payment": {
+        "provider": "demo",
+        "providerLabel": "Demo Checkout",
+        "invoiceId": null,
+        "invoiceUrl": null,
+        "status": "finished",
+        "payCurrency": "USD",
+        "payAmount": 14.5,
+        "actuallyPaid": 14.5,
+        "createdAt": "2025-10-09T09:15:00.000Z",
+        "updatedAt": "2025-10-09T09:15:00.000Z"
+      }
+    },
+    {
+      "id": "#44142",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 31.2,
+      "currency": "EUR",
+      "product": "ProfitCruiser Robux Drop",
+      "robuxAmount": 5000,
+      "status": "pending",
+      "createdAt": "2025-10-23T01:20:58.896Z",
+      "payment": {
+        "provider": "nowpayments-btc",
+        "providerLabel": "NOWPayments (Bitcoin)",
+        "invoiceId": "5002454936",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=5002454936",
+        "status": "waiting",
+        "payCurrency": "BTC",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-10-23T01:20:58.896Z",
+        "updatedAt": "2025-10-23T01:20:58.896Z"
+      }
+    },
+    {
+      "id": "#71407",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 31.2,
+      "currency": "EUR",
+      "product": "ProfitCruiser Robux Drop",
+      "robuxAmount": 5000,
+      "status": "pending",
+      "createdAt": "2025-10-23T01:24:56.920Z",
+      "payment": {
+        "provider": "nowpayments-btc",
+        "providerLabel": "NOWPayments (Bitcoin)",
+        "invoiceId": "5479737236",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=5479737236",
+        "status": "waiting",
+        "payCurrency": "BTC",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-10-23T01:24:56.920Z",
+        "updatedAt": "2025-10-23T01:24:56.920Z"
+      }
+    },
+    {
+      "id": "#15799",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 31.2,
+      "currency": "EUR",
+      "product": "ProfitCruiser Robux Drop",
+      "robuxAmount": 5000,
+      "status": "pending",
+      "createdAt": "2025-10-23T01:42:07.448Z",
+      "payment": {
+        "provider": "nowpayments-usdc",
+        "providerLabel": "NOWPayments (USD Coin)",
+        "invoiceId": "4319572937",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=4319572937",
+        "status": "waiting",
+        "payCurrency": "USDC",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-10-23T01:42:07.448Z",
+        "updatedAt": "2025-10-23T01:42:07.448Z"
+      }
+    },
+    {
+      "id": "#81498",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 31.2,
+      "currency": "EUR",
+      "product": "ProfitCruiser Robux Drop",
+      "robuxAmount": 5000,
+      "status": "pending",
+      "createdAt": "2025-10-23T01:52:37.111Z",
+      "payment": {
+        "provider": "nowpayments-eth",
+        "providerLabel": "NOWPayments (Ethereum)",
+        "invoiceId": "4859190475",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=4859190475",
+        "status": "waiting",
+        "payCurrency": "ETH",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-10-23T01:52:37.111Z",
+        "updatedAt": "2025-10-23T01:52:37.111Z"
+      }
+    },
+    {
+      "id": "#79125",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 31.2,
+      "currency": "EUR",
+      "product": "ProfitCruiser Robux Drop",
+      "robuxAmount": 5000,
+      "status": "pending",
+      "createdAt": "2025-10-23T01:53:03.254Z",
+      "payment": {
+        "provider": "nowpayments-btc",
+        "providerLabel": "NOWPayments (Bitcoin)",
+        "invoiceId": "5899844853",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=5899844853",
+        "status": "waiting",
+        "payCurrency": "BTC",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-10-23T01:53:03.254Z",
+        "updatedAt": "2025-10-23T01:53:03.254Z"
+      }
+    },
+    {
+      "id": "#23284",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 31.2,
+      "currency": "EUR",
+      "product": "ProfitCruiser Robux Drop",
+      "robuxAmount": 5000,
+      "status": "pending",
+      "createdAt": "2025-10-23T01:53:13.142Z",
+      "payment": {
+        "provider": "nowpayments-eth",
+        "providerLabel": "NOWPayments (Ethereum)",
+        "invoiceId": "5023690174",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=5023690174",
+        "status": "waiting",
+        "payCurrency": "ETH",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-10-23T01:53:13.142Z",
+        "updatedAt": "2025-10-23T01:53:13.142Z"
+      }
+    },
+    {
+      "id": "#74546",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 31.2,
+      "currency": "EUR",
+      "product": "ProfitCruiser Robux Drop",
+      "robuxAmount": 5000,
+      "status": "pending",
+      "createdAt": "2025-10-23T01:53:18.462Z",
+      "payment": {
+        "provider": "nowpayments-usdc",
+        "providerLabel": "NOWPayments (USD Coin)",
+        "invoiceId": "4614457581",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=4614457581",
+        "status": "waiting",
+        "payCurrency": "USDC",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-10-23T01:53:18.462Z",
+        "updatedAt": "2025-10-23T01:53:18.462Z"
+      }
+    },
+    {
+      "id": "#55269",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 31.2,
+      "currency": "EUR",
+      "product": "ProfitCruiser Robux Drop",
+      "robuxAmount": 5000,
+      "status": "pending",
+      "createdAt": "2025-10-23T02:01:19.359Z",
+      "payment": {
+        "provider": "nowpayments-usdterc20",
+        "providerLabel": "NOWPayments (Tether USD (ERC-20))",
+        "invoiceId": "5939405486",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=5939405486",
+        "status": "waiting",
+        "payCurrency": "USDTERC20",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-10-23T02:01:19.359Z",
+        "updatedAt": "2025-10-23T02:01:19.359Z"
+      }
+    },
+    {
+      "id": "#77595",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 31.2,
+      "currency": "EUR",
+      "product": "ProfitCruiser Robux Drop",
+      "robuxAmount": 5000,
+      "status": "pending",
+      "createdAt": "2025-10-23T02:13:36.129Z",
+      "payment": {
+        "provider": "nowpayments-eth",
+        "providerLabel": "NOWPayments (Ethereum)",
+        "invoiceId": "4772663870",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=4772663870",
+        "status": "waiting",
+        "payCurrency": "ETH",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-10-23T02:13:36.129Z",
+        "updatedAt": "2025-10-23T02:13:36.129Z"
+      }
+    },
+    {
+      "id": "#58804",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 31.2,
+      "currency": "EUR",
+      "product": "ProfitCruiser Robux Drop",
+      "robuxAmount": 5000,
+      "status": "pending",
+      "createdAt": "2025-10-23T02:15:20.175Z",
+      "payment": {
+        "provider": "nowpayments-btc",
+        "providerLabel": "NOWPayments (Bitcoin)",
+        "invoiceId": "5497167823",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=5497167823",
+        "status": "waiting",
+        "payCurrency": "BTC",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-10-23T02:15:20.175Z",
+        "updatedAt": "2025-10-23T02:15:20.175Z"
+      }
+    },
+    {
+      "id": "#54129",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 31.2,
+      "currency": "EUR",
+      "product": "ProfitCruiser Robux Drop",
+      "robuxAmount": 5000,
+      "status": "pending",
+      "createdAt": "2025-10-23T03:09:54.166Z",
+      "payment": {
+        "provider": "nowpayments-usdterc20",
+        "providerLabel": "NOWPayments (Tether USD (ERC-20))",
+        "invoiceId": "6096830488",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=6096830488",
+        "status": "waiting",
+        "payCurrency": "USDTERC20",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-10-23T03:09:54.166Z",
+        "updatedAt": "2025-10-23T03:09:54.166Z"
+      }
+    },
+    {
+      "id": "#16539",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 31.2,
+      "currency": "EUR",
+      "product": "ProfitCruiser Robux Drop",
+      "robuxAmount": 5000,
+      "status": "pending",
+      "createdAt": "2025-10-23T03:13:59.229Z",
+      "payment": {
+        "provider": "nowpayments-usdterc20",
+        "providerLabel": "NOWPayments (Tether USD (ERC-20))",
+        "invoiceId": "6251052049",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=6251052049",
+        "status": "waiting",
+        "payCurrency": "USDTERC20",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-10-23T03:13:59.229Z",
+        "updatedAt": "2025-10-23T03:13:59.229Z"
+      }
+    },
+    {
+      "id": "#96701",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 31.2,
+      "currency": "EUR",
+      "product": "ProfitCruiser Robux Drop",
+      "robuxAmount": 5000,
+      "status": "pending",
+      "createdAt": "2025-10-23T03:15:02.760Z",
+      "payment": {
+        "provider": "nowpayments-btc",
+        "providerLabel": "NOWPayments (Bitcoin)",
+        "invoiceId": "5209853041",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=5209853041",
+        "status": "waiting",
+        "payCurrency": "BTC",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-10-23T03:15:02.760Z",
+        "updatedAt": "2025-10-23T03:15:02.760Z"
+      }
+    },
+    {
+      "id": "#90686",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 2.5,
+      "currency": "EUR",
+      "product": "ProfitCruiser Robux Drop",
+      "robuxAmount": 400,
+      "status": "pending",
+      "createdAt": "2025-10-25T16:27:28.046Z",
+      "payment": {
+        "provider": "nowpayments-usdterc20",
+        "providerLabel": "NOWPayments (Tether USD (ERC-20))",
+        "invoiceId": "5237665794",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=5237665794",
+        "status": "waiting",
+        "payCurrency": "USDTERC20",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-10-25T16:27:28.046Z",
+        "updatedAt": "2025-10-25T16:27:28.046Z"
+      }
+    },
+    {
+      "id": "#78226",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 2.5,
+      "currency": "EUR",
+      "product": "ProfitCruiser Robux Drop",
+      "robuxAmount": 400,
+      "status": "pending",
+      "createdAt": "2025-10-26T13:04:26.981Z",
+      "payment": {
+        "provider": "nowpayments-eth",
+        "providerLabel": "NOWPayments (Ethereum)",
+        "invoiceId": "6208473719",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=6208473719",
+        "status": "waiting",
+        "payCurrency": "ETH",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-10-26T13:04:26.981Z",
+        "updatedAt": "2025-10-26T13:04:26.981Z"
+      }
+    },
+    {
+      "id": "#39144",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 12.48,
+      "currency": "EUR",
+      "product": "Robux",
+      "robuxAmount": 2000,
+      "status": "pending",
+      "createdAt": "2025-11-01T01:09:19.727Z",
+      "payment": {
+        "provider": "nowpayments-btc",
+        "providerLabel": "NOWPayments (Bitcoin)",
+        "invoiceId": "6083424379",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=6083424379",
+        "status": "waiting",
+        "payCurrency": "BTC",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-11-01T01:09:19.727Z",
+        "updatedAt": "2025-11-01T01:09:19.727Z"
+      }
+    },
+    {
+      "id": "#49378",
+      "userId": "969365db-c389-41d9-bcf2-ceae141a3613",
+      "username": "Didde",
+      "amount": 2.5,
+      "currency": "EUR",
+      "product": "Robux",
+      "robuxAmount": 400,
+      "status": "pending",
+      "createdAt": "2025-11-01T19:59:12.739Z",
+      "payment": {
+        "provider": "nowpayments-eth",
+        "providerLabel": "NOWPayments (Ethereum)",
+        "invoiceId": "5636066599",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=5636066599",
+        "status": "waiting",
+        "payCurrency": "ETH",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-11-01T19:59:12.739Z",
+        "updatedAt": "2025-11-01T19:59:12.739Z"
+      }
+    }
+  ],
+  "chats": [
+    {
+      "id": "f0c46c9b-f646-4a39-a7ce-0db5467dbcd1",
+      "orderId": "#30219",
+      "userId": "sample-alex",
+      "username": "Alex#123",
+      "status": "closed",
+      "createdAt": "2025-10-09T09:45:00.000Z",
+      "lastActivityAt": "2025-10-27T14:10:03.348Z",
+      "responseMinutes": 12,
+      "messages": [
+        {
+          "id": "5de44af2-8fcc-44ed-b01b-5e745401d90d",
+          "author": "system",
+          "body": "Chat opened for order #30219",
+          "createdAt": "2025-10-09T09:45:00.000Z"
+        },
+        {
+          "id": "734fcab8-5cd7-463f-810b-6ecbdf2775c4",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-09T09:45:10.000Z"
+        },
+        {
+          "id": "8af22e5e-a51d-4512-831d-d951cdfcc246",
+          "author": "Alex#123",
+          "body": "Hi, just placed an order! Let me know when you are ready.",
+          "createdAt": "2025-10-09T09:45:30.000Z"
+        },
+        {
+          "id": "a572a1e4-926c-4e11-ad13-9a8d75d8c690",
+          "author": "admin",
+          "body": "Thanks Alex! I will deliver within the hour. Stay online in your VIP server.",
+          "createdAt": "2025-10-09T09:46:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "32fdfe24-1e35-4eae-81e3-dfede748ff26",
+      "orderId": "#30220",
+      "userId": "sample-julian",
+      "username": "Julian",
+      "status": "closed",
+      "createdAt": "2025-10-09T09:45:00.000Z",
+      "lastActivityAt": "2025-10-09T10:05:00.000Z",
+      "responseMinutes": 8,
+      "messages": [
+        {
+          "id": "2f1ec23e-dc5a-4f91-90bc-8e7f609746cb",
+          "author": "system",
+          "body": "Chat opened for order #30220",
+          "createdAt": "2025-10-09T09:45:00.000Z"
+        },
+        {
+          "id": "e5e21aaf-2cef-461d-bc16-3858b8293c8f",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-09T09:45:10.000Z"
+        },
+        {
+          "id": "0a012fce-70ba-4c82-a636-a6e85f61e93f",
+          "author": "Julian",
+          "body": "Looking forward to the private coaching session.",
+          "createdAt": "2025-10-09T09:47:00.000Z"
+        },
+        {
+          "id": "e358b060-fcc8-4b50-952e-9c7344eb9cb7",
+          "author": "admin",
+          "body": "Scheduled for tonight 20:00 CET. See you there!",
+          "createdAt": "2025-10-09T09:48:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "48cfd17b-e41f-4509-a996-6c4f756c7b13",
+      "orderId": "#44142",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "closed",
+      "createdAt": "2025-10-23T01:21:00.405Z",
+      "lastActivityAt": "2025-11-01T01:15:07.330Z",
+      "responseMinutes": 6529,
+      "messages": [
+        {
+          "id": "0a3f1446-c5aa-436e-b818-88862ed429f3",
+          "author": "system",
+          "body": "Chat opened for order #44142",
+          "createdAt": "2025-10-23T01:21:00.405Z"
+        },
+        {
+          "id": "3849d667-44ea-459e-8dbf-72193d157c20",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-23T01:21:00.405Z"
+        },
+        {
+          "id": "6feac061-e8ed-4aa5-a843-08338fe38c8c",
+          "author": "admin",
+          "body": "Hello....",
+          "createdAt": "2025-10-27T14:10:27.629Z"
+        }
+      ]
+    },
+    {
+      "id": "dfd77d7c-b117-4212-a6a8-ccdc6a696746",
+      "orderId": "#71407",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "closed",
+      "createdAt": "2025-10-23T01:24:58.409Z",
+      "lastActivityAt": "2025-10-27T14:10:09.084Z",
+      "responseMinutes": null,
+      "messages": [
+        {
+          "id": "ef8ab010-9de1-4487-8e1f-81a4b338f333",
+          "author": "system",
+          "body": "Chat opened for order #71407",
+          "createdAt": "2025-10-23T01:24:58.409Z"
+        },
+        {
+          "id": "e1665709-40e2-42dd-9a89-c5927f63ce96",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-23T01:24:58.409Z"
+        }
+      ]
+    },
+    {
+      "id": "f251d982-41bc-482b-b458-aa7423b79596",
+      "orderId": "#15799",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "open",
+      "createdAt": "2025-10-23T01:42:09.059Z",
+      "lastActivityAt": "2025-10-23T01:42:09.059Z",
+      "responseMinutes": null,
+      "messages": [
+        {
+          "id": "0a7af9d3-20f7-4781-91d8-ea81652bd390",
+          "author": "system",
+          "body": "Chat opened for order #15799",
+          "createdAt": "2025-10-23T01:42:09.059Z"
+        },
+        {
+          "id": "28bcdac2-5fcd-4475-b76b-35d33a2b4d94",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-23T01:42:09.059Z"
+        }
+      ]
+    },
+    {
+      "id": "a1982ff4-0d38-4afa-ac54-5cac62d75db1",
+      "orderId": "#81498",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "open",
+      "createdAt": "2025-10-23T01:52:38.737Z",
+      "lastActivityAt": "2025-10-23T01:52:38.737Z",
+      "responseMinutes": null,
+      "messages": [
+        {
+          "id": "b44ed3cd-0752-45e4-b5e8-9482d99f6931",
+          "author": "system",
+          "body": "Chat opened for order #81498",
+          "createdAt": "2025-10-23T01:52:38.737Z"
+        },
+        {
+          "id": "bfb735e5-df57-4b1e-b52f-85058c2049a5",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-23T01:52:38.737Z"
+        }
+      ]
+    },
+    {
+      "id": "2749944f-42f8-47b7-8c26-01e14ed98795",
+      "orderId": "#79125",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "open",
+      "createdAt": "2025-10-23T01:53:06.059Z",
+      "lastActivityAt": "2025-10-23T01:53:06.059Z",
+      "responseMinutes": null,
+      "messages": [
+        {
+          "id": "97cfaa82-8320-4b80-a509-99a0a7a90c1a",
+          "author": "system",
+          "body": "Chat opened for order #79125",
+          "createdAt": "2025-10-23T01:53:06.059Z"
+        },
+        {
+          "id": "163bf32e-7411-4840-9556-32dc749657af",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-23T01:53:06.059Z"
+        }
+      ]
+    },
+    {
+      "id": "cfca86a7-efb9-4dae-b24d-0492310d29f1",
+      "orderId": "#23284",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "open",
+      "createdAt": "2025-10-23T01:53:14.729Z",
+      "lastActivityAt": "2025-10-23T01:53:14.729Z",
+      "responseMinutes": null,
+      "messages": [
+        {
+          "id": "fee24c11-7472-4c0f-9724-2a191b3d87cc",
+          "author": "system",
+          "body": "Chat opened for order #23284",
+          "createdAt": "2025-10-23T01:53:14.729Z"
+        },
+        {
+          "id": "66ac60dd-2eff-4e23-9815-536cc126b05b",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-23T01:53:14.729Z"
+        }
+      ]
+    },
+    {
+      "id": "dfb44165-db29-4bd6-a0f9-0fe13dd220fc",
+      "orderId": "#74546",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "open",
+      "createdAt": "2025-10-23T01:53:19.063Z",
+      "lastActivityAt": "2025-10-23T01:53:19.063Z",
+      "responseMinutes": null,
+      "messages": [
+        {
+          "id": "a319ed81-2331-4b23-b399-41eb3c70b250",
+          "author": "system",
+          "body": "Chat opened for order #74546",
+          "createdAt": "2025-10-23T01:53:19.063Z"
+        },
+        {
+          "id": "ac9993b9-16a4-4dd7-b65f-d8c7e3bbd9b0",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-23T01:53:19.063Z"
+        }
+      ]
+    },
+    {
+      "id": "cdc46f86-89ed-4a5a-ad1b-c33858712dd5",
+      "orderId": "#55269",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "open",
+      "createdAt": "2025-10-23T02:01:21.041Z",
+      "lastActivityAt": "2025-10-23T02:01:21.041Z",
+      "responseMinutes": null,
+      "messages": [
+        {
+          "id": "4bfb6430-16ac-43f0-87ad-835a9cf9f844",
+          "author": "system",
+          "body": "Chat opened for order #55269",
+          "createdAt": "2025-10-23T02:01:21.041Z"
+        },
+        {
+          "id": "dd55f062-d255-4533-b6df-14b8b0b8457a",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-23T02:01:21.041Z"
+        }
+      ]
+    },
+    {
+      "id": "3aad79ba-f9a2-4a5a-aa3d-0623415601da",
+      "orderId": "#77595",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "open",
+      "createdAt": "2025-10-23T02:13:37.625Z",
+      "lastActivityAt": "2025-10-23T02:13:37.625Z",
+      "responseMinutes": null,
+      "messages": [
+        {
+          "id": "8a9a4414-fa3f-4f87-8a7f-c786b58b21c4",
+          "author": "system",
+          "body": "Chat opened for order #77595",
+          "createdAt": "2025-10-23T02:13:37.625Z"
+        },
+        {
+          "id": "a7fe2cbd-2073-4dc1-b026-da38cb698ef9",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-23T02:13:37.625Z"
+        }
+      ]
+    },
+    {
+      "id": "991105a1-b41a-4f8c-ad73-98f39c412184",
+      "orderId": "#58804",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "open",
+      "createdAt": "2025-10-23T02:15:21.855Z",
+      "lastActivityAt": "2025-10-23T02:15:21.855Z",
+      "responseMinutes": null,
+      "messages": [
+        {
+          "id": "8dc47557-c179-4205-9a97-c9c5c8e9c367",
+          "author": "system",
+          "body": "Chat opened for order #58804",
+          "createdAt": "2025-10-23T02:15:21.855Z"
+        },
+        {
+          "id": "3d33b1b3-eea8-456d-8d0f-42239a852168",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-23T02:15:21.855Z"
+        }
+      ]
+    },
+    {
+      "id": "7aabfb61-3926-4d58-8f9b-be900b70e373",
+      "orderId": "#54129",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "open",
+      "createdAt": "2025-10-23T03:09:55.667Z",
+      "lastActivityAt": "2025-10-23T03:09:55.667Z",
+      "responseMinutes": null,
+      "messages": [
+        {
+          "id": "bec20c74-c9e4-470c-8936-e41665584b1c",
+          "author": "system",
+          "body": "Chat opened for order #54129",
+          "createdAt": "2025-10-23T03:09:55.667Z"
+        },
+        {
+          "id": "e6d86046-a0b4-40ae-834b-d8eb4e827524",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-23T03:09:55.667Z"
+        }
+      ]
+    },
+    {
+      "id": "3ae23211-bf9a-4afc-adca-54403798b864",
+      "orderId": "#16539",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "open",
+      "createdAt": "2025-10-23T03:14:01.187Z",
+      "lastActivityAt": "2025-10-23T03:14:01.187Z",
+      "responseMinutes": null,
+      "messages": [
+        {
+          "id": "b89bba2e-57e8-4e97-b69b-b81265630cde",
+          "author": "system",
+          "body": "Chat opened for order #16539",
+          "createdAt": "2025-10-23T03:14:01.187Z"
+        },
+        {
+          "id": "81886bdc-ca8f-4b1e-863a-8630680ab354",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-23T03:14:01.187Z"
+        }
+      ]
+    },
+    {
+      "id": "ddceac49-a5f5-42cc-8728-96509a0e61a9",
+      "orderId": "#96701",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "open",
+      "createdAt": "2025-10-23T03:15:04.477Z",
+      "lastActivityAt": "2025-10-23T03:15:04.477Z",
+      "responseMinutes": null,
+      "messages": [
+        {
+          "id": "63ae47c5-6dc0-4c31-9c85-95aa6dacddaf",
+          "author": "system",
+          "body": "Chat opened for order #96701",
+          "createdAt": "2025-10-23T03:15:04.477Z"
+        },
+        {
+          "id": "b771b318-37ec-468e-88e7-ea2e0793ad8c",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-23T03:15:04.477Z"
+        }
+      ]
+    },
+    {
+      "id": "0692003d-8939-4139-aa3f-7cc16c6b82cb",
+      "orderId": "#90686",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "open",
+      "createdAt": "2025-10-25T16:27:29.539Z",
+      "lastActivityAt": "2025-10-25T16:27:29.539Z",
+      "responseMinutes": null,
+      "messages": [
+        {
+          "id": "59495208-f4a4-4132-b750-c96d79209c91",
+          "author": "system",
+          "body": "Chat opened for order #90686",
+          "createdAt": "2025-10-25T16:27:29.539Z"
+        },
+        {
+          "id": "04acb53b-6af9-4e8c-b8dd-9f9b209782d5",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-25T16:27:29.539Z"
+        }
+      ]
+    },
+    {
+      "id": "73c85c6d-3f17-4af7-aa67-2d3cc3558b0b",
+      "orderId": "#78226",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "open",
+      "createdAt": "2025-10-26T13:04:28.447Z",
+      "lastActivityAt": "2025-10-27T14:09:13.488Z",
+      "responseMinutes": 1505,
+      "messages": [
+        {
+          "id": "643408e0-3796-4914-be98-ca02ab20f39b",
+          "author": "system",
+          "body": "Chat opened for order #78226",
+          "createdAt": "2025-10-26T13:04:28.447Z"
+        },
+        {
+          "id": "8f93c9d3-9ceb-4707-98f8-9fb65f81202b",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-10-26T13:04:28.447Z"
+        },
+        {
+          "id": "4455b110-32d1-4f99-bfb7-c799a9519b20",
+          "author": "admin",
+          "body": "adfasdfsadfsadf",
+          "createdAt": "2025-10-27T14:09:13.488Z"
+        }
+      ]
+    },
+    {
+      "id": "3462e2bf-d549-4bb7-9275-12395834ed4d",
+      "orderId": "#39144",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "open",
+      "createdAt": "2025-11-01T01:09:19.988Z",
+      "lastActivityAt": "2025-11-01T01:14:34.980Z",
+      "responseMinutes": 5,
+      "messages": [
+        {
+          "id": "22015dbc-6f45-4bec-8242-81012e5da0d0",
+          "author": "system",
+          "body": "Chat opened for order #39144",
+          "createdAt": "2025-11-01T01:09:19.988Z"
+        },
+        {
+          "id": "1b04c815-3bcb-4938-a053-495746a63592",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-11-01T01:09:19.988Z"
+        },
+        {
+          "id": "f0ea31ec-2d2f-4cbb-bd88-c97b6fb8b9a7",
+          "author": "admin",
+          "body": "djwnvijw",
+          "createdAt": "2025-11-01T01:14:34.980Z"
+        }
+      ]
+    },
+    {
+      "id": "3bb739b7-5f0c-4796-b64e-8e35a512b7d3",
+      "orderId": "#49378",
+      "userId": "969365db-c389-41d9-bcf2-ceae141a3613",
+      "username": "Didde",
+      "status": "open",
+      "createdAt": "2025-11-01T19:59:13.291Z",
+      "lastActivityAt": "2025-11-01T19:59:13.291Z",
+      "responseMinutes": null,
+      "messages": [
+        {
+          "id": "d9075f70-a36c-4c4e-a0fc-2e08ebf35ab3",
+          "author": "system",
+          "body": "Chat opened for order #49378",
+          "createdAt": "2025-11-01T19:59:13.291Z"
+        },
+        {
+          "id": "5ef76aad-532e-485f-81c8-2aed8e65f23a",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-11-01T19:59:13.291Z"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "email": "admin@profitcruiser.gg",
+      "username": "Admin",
+      "passwordHash": "9a4aabf0e5cf71cae2cea646613ce7e2a5919fa758e56819704be25a3a2c1f0b",
+      "role": "admin",
+      "createdAt": "2025-10-21T16:22:58.606Z",
+      "lastLoginAt": "2025-12-04T23:02:31.603Z"
+    },
+    {
+      "id": "0d406d80-ac00-4ed0-9236-97df0282a793",
+      "email": "rifivvwvw@gmail.com",
+      "username": "didd",
+      "passwordHash": "72168c3579a831d19349d2fa5d314db73987baf4a78872992718fc0b8ade10a9",
+      "role": "user",
+      "createdAt": "2025-10-30T11:37:53.335Z",
+      "lastLoginAt": null
+    },
+    {
+      "id": "be4bfcb5-5b1d-4d26-a811-20e7ab03f48a",
+      "email": "didrikguld@yahoo.no",
+      "username": "Didde",
+      "passwordHash": "748a4a8407164b8965683aab81fdeda6095e017312cbc343ebe0a3c68ba2d2f3",
+      "role": "user",
+      "createdAt": "2025-10-30T20:00:45.217Z",
+      "lastLoginAt": null
+    },
+    {
+      "id": "969365db-c389-41d9-bcf2-ceae141a3613",
+      "email": "didik@yahoo.no",
+      "username": "Didde",
+      "passwordHash": "ab9adc1b96d8bee9c266011220be28874404fdabd1b973dadde9724ba345d963",
+      "role": "user",
+      "createdAt": "2025-11-01T19:57:54.875Z",
+      "lastLoginAt": null
+    }
+  ],
+  "sessions": [
+    {
+      "token": "dc4ab2d3-be3f-4a06-80cd-190c4522ae8d05c5d0dc-a714-41de-9689-44aea1075e85",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-21T16:24:56.420Z",
+      "expiresAt": "2025-10-28T16:24:56.420Z"
+    },
+    {
+      "token": "6876b313-0a03-40fe-8755-634eb405602baa263d05-2020-4d58-bc75-7517e9795a12",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-23T01:20:11.232Z",
+      "expiresAt": "2025-10-30T01:20:11.232Z"
+    },
+    {
+      "token": "4df66d88-8ff3-4496-8063-c4274c532f048a3f946b-f5cd-48f1-8823-b123fb4928aa",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-23T02:01:13.258Z",
+      "expiresAt": "2025-10-30T02:01:13.258Z"
+    },
+    {
+      "token": "7b334886-7477-43b6-86ba-86823af9a59d6c02fbb3-d00f-4a85-a9d9-b1a35c3e957a",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-23T02:21:07.937Z",
+      "expiresAt": "2025-10-30T02:21:07.937Z"
+    },
+    {
+      "token": "e75cd638-1512-4f91-b2fb-031b9e7a2bf43ad65f66-a036-452e-97a3-56e9f3c230cd",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-23T02:23:21.836Z",
+      "expiresAt": "2025-10-30T02:23:21.836Z"
+    },
+    {
+      "token": "69a5f5ef-8c2b-4372-a409-e5aec6d6a6009c2fd641-a8a5-4589-898f-6122fa78a6f0",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-23T02:43:55.399Z",
+      "expiresAt": "2025-10-30T02:43:55.399Z"
+    },
+    {
+      "token": "7bfb8511-4336-4353-ba4e-d694358475e20a9629f8-284c-48cd-bce4-c73299e71ca1",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-23T02:56:11.037Z",
+      "expiresAt": "2025-10-30T02:56:11.037Z"
+    },
+    {
+      "token": "2eb12af9-35d2-4284-bae6-ac38e3d10aacd2e5ffa9-ddc8-45e3-ad10-16df260ca99f",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-23T03:03:37.278Z",
+      "expiresAt": "2025-10-30T03:03:37.278Z"
+    },
+    {
+      "token": "e66598a0-5270-4538-ab3f-52d76fca3a1e44ba2a2e-8078-44c4-a780-dac8c3cc028d",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-23T03:08:42.080Z",
+      "expiresAt": "2025-10-30T03:08:42.080Z"
+    },
+    {
+      "token": "064b4562-9a3f-43a6-a5ef-fa17b3b2d0b5e8145f9c-1ec0-446f-859c-8c3dddcb8b9b",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-23T03:09:35.223Z",
+      "expiresAt": "2025-10-30T03:09:35.223Z"
+    },
+    {
+      "token": "5def26f2-9896-4247-a4dd-c1f5e94b1ee96eed67b1-afa6-42db-a1dd-7b6665d3848f",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-23T03:09:43.248Z",
+      "expiresAt": "2025-10-30T03:09:43.248Z"
+    },
+    {
+      "token": "45cbe10d-ec2b-4ead-aad4-aa4502def221685fe6c0-a2f0-4dc5-a72e-fdbd2abcb5c0",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-23T03:13:54.993Z",
+      "expiresAt": "2025-10-30T03:13:54.993Z"
+    },
+    {
+      "token": "dafa8a22-32fa-40d7-9199-cc84a7f12d0aeb094dd0-c2ba-4d6d-b0d5-f7f1bc73804d",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-23T15:41:45.133Z",
+      "expiresAt": "2025-10-30T15:41:45.133Z"
+    },
+    {
+      "token": "7604cd4b-f289-4886-842f-43957982bae5a1b06b63-2a99-4510-b0e8-424da3c273aa",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-27T15:32:35.227Z",
+      "expiresAt": "2025-11-03T15:32:35.227Z"
+    },
+    {
+      "token": "1ca33732-2bee-4e4f-acaa-1d8ab57a593b1b6fc341-4fcd-4a8a-b414-6e7ef94afb0f",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-29T19:21:29.656Z",
+      "expiresAt": "2025-11-05T19:21:29.655Z"
+    },
+    {
+      "token": "58634797-4061-46b9-b129-67338aa0279be8c3d374-f5a6-44b4-a14f-a00ceae1958d",
+      "userId": "0d406d80-ac00-4ed0-9236-97df0282a793",
+      "createdAt": "2025-10-30T11:37:53.336Z",
+      "expiresAt": "2025-11-06T11:37:53.336Z"
+    },
+    {
+      "token": "71ff8d1b-39fd-467b-8ee0-347f16c6193d9177bc92-a694-4152-8aeb-d36141b98ad6",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-30T13:28:33.282Z",
+      "expiresAt": "2025-11-06T13:28:33.282Z"
+    },
+    {
+      "token": "36124973-3fb9-4180-81cb-350d4e8a0a220fd95c9d-d407-46f7-9ed8-f413c9439fb4",
+      "userId": "be4bfcb5-5b1d-4d26-a811-20e7ab03f48a",
+      "createdAt": "2025-10-30T20:00:45.217Z",
+      "expiresAt": "2025-11-06T20:00:45.217Z"
+    },
+    {
+      "token": "c611bd5c-a808-4cbc-9604-75cc8712ac59228dd129-5717-444d-a9da-4c441cf8f95f",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-10-30T23:00:57.751Z",
+      "expiresAt": "2025-11-06T23:00:57.750Z"
+    },
+    {
+      "token": "831af8bd-483f-4c30-b3cf-907b80c7a2aae5ba2ad3-e503-4ac8-b949-def424f72699",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-11-01T18:39:03.209Z",
+      "expiresAt": "2025-11-08T18:39:03.209Z"
+    },
+    {
+      "token": "3156a09f-2f04-43fd-8d84-bc73cc75fe7b7b4b9735-e0bf-4458-ab31-fe3584e474e8",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-11-01T19:47:25.352Z",
+      "expiresAt": "2025-11-08T19:47:25.352Z"
+    },
+    {
+      "token": "c743f0be-adc5-4a77-9e1c-b81b4c84dc6ddae14d45-bfc5-4dbb-adf0-273e051202c7",
+      "userId": "969365db-c389-41d9-bcf2-ceae141a3613",
+      "createdAt": "2025-11-01T19:57:54.875Z",
+      "expiresAt": "2025-11-08T19:57:54.875Z"
+    },
+    {
+      "token": "8bb40847-7987-4ff0-8ac5-1463242fe630380339bd-2f24-4b97-810c-4b4b8160cd2c",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-11-01T23:03:27.210Z",
+      "expiresAt": "2025-11-08T23:03:27.210Z"
+    },
+    {
+      "token": "d43acd5a-a92b-4f5b-bf38-6f2683b8ecee936cc27c-8d68-4175-ac6a-8fb3d8500ea7",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-11-09T19:55:56.158Z",
+      "expiresAt": "2025-11-16T19:55:56.157Z"
+    },
+    {
+      "token": "a9966444-dd10-4e69-ad49-26d00775d6c36d145e21-a6ff-4c18-a74f-6f31a0b168d9",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-12-04T22:55:27.900Z",
+      "expiresAt": "2025-12-11T22:55:27.900Z"
+    },
+    {
+      "token": "ff07a6fa-b629-4d8a-aa81-8d59ebc602e9efedf386-f5a5-48d6-ad2e-1c5d919301fe",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-12-04T22:59:19.517Z",
+      "expiresAt": "2025-12-11T22:59:19.517Z"
+    },
+    {
+      "token": "ce94a8a3-462e-4972-9b14-1d10cee0f42c8d912343-793a-40c8-8d31-24b0fcf292ce",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-12-04T22:59:52.370Z",
+      "expiresAt": "2025-12-11T22:59:52.370Z"
+    },
+    {
+      "token": "0a962712-9419-470f-85b0-18438fb34aa6b7874944-5896-4f24-aa70-21f4e0d873b8",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-12-04T23:02:31.603Z",
+      "expiresAt": "2025-12-11T23:02:31.603Z"
+    }
+  ],
+  "scriptVisibility": {},
+  "settings": {
+    "siteName": "ProfitCruiser",
+    "siteTagline": "Premium Roblox Scripts",
+    "logoUrl": "/logo.svg",
+    "stripeKey": "",
+    "payhipKey": "",
+    "workinkKey": "",
+    "revolutIban": "",
+    "chatEnabled": true,
+    "loggingEnabled": true,
+    "notificationsEnabled": true
+  },
+  "metrics": {
+    "chatResponseMinutes": 10
+  },
+  "activityLog": [
+    {
+      "id": "7d4a43a7-bbaf-43d7-8a0f-7c57450d57ea",
+      "timestamp": "2025-10-09T09:43:00.000Z",
+      "message": "New payment from Alex#123 ($7.99)"
+    },
+    {
+      "id": "2cb95f2c-c67f-4f4c-8594-ed5f8aedc195",
+      "timestamp": "2025-10-09T09:45:00.000Z",
+      "message": "Chat opened (Order #30219)"
+    },
+    {
+      "id": "08c1c5d2-af97-468d-9609-81d6ace27339",
+      "timestamp": "2025-10-09T09:46:00.000Z",
+      "message": "Message sent by Admin"
+    },
+    {
+      "id": "d44f399d-a011-42d3-b7dc-2c74b04d2cca",
+      "timestamp": "2025-10-09T09:50:00.000Z",
+      "message": "Script \"Auto Rob Hub\" published"
+    },
+    {
+      "id": "e0123dbd-b6a1-43e5-9dad-4cb29ea4a40e",
+      "timestamp": "2025-10-21T16:24:56.420Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "31171197-674f-4d6d-8c45-2d8a5d59da9c",
+      "timestamp": "2025-10-23T01:20:11.232Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "1329562c-37d5-4861-afde-0b6476c507f9",
+      "timestamp": "2025-10-23T01:21:00.405Z",
+      "message": "Order #44142 awaiting payment via NOWPayments (Bitcoin) (BTC) from Admin"
+    },
+    {
+      "id": "8ad89f90-727b-4c84-a4ae-55571ced2ff2",
+      "timestamp": "2025-10-23T01:21:00.405Z",
+      "message": "NOWPayments (Bitcoin) invoice created for order #44142"
+    },
+    {
+      "id": "e3b0c8df-c145-4738-a0ae-34accd913e3d",
+      "timestamp": "2025-10-23T01:21:00.405Z",
+      "message": "Chat opened (Order #44142)"
+    },
+    {
+      "id": "454855e5-f508-4e28-ab05-ce5cf3dbcfa8",
+      "timestamp": "2025-10-23T01:24:04.109Z",
+      "message": "View recorded for cut-trees"
+    },
+    {
+      "id": "5f5028d2-0971-4234-9d6e-ae50f64a51ba",
+      "timestamp": "2025-10-23T01:24:58.409Z",
+      "message": "Order #71407 awaiting payment via NOWPayments (Bitcoin) (BTC) from Admin"
+    },
+    {
+      "id": "19225c4d-671a-4dfd-b169-471c4ad7acc8",
+      "timestamp": "2025-10-23T01:24:58.409Z",
+      "message": "NOWPayments (Bitcoin) invoice created for order #71407"
+    },
+    {
+      "id": "f3ac49e1-80da-4e3c-9f79-b26bfeee3cb7",
+      "timestamp": "2025-10-23T01:24:58.409Z",
+      "message": "Chat opened (Order #71407)"
+    },
+    {
+      "id": "8911009e-6f03-4402-b58a-77def2423385",
+      "timestamp": "2025-10-23T01:42:09.059Z",
+      "message": "Order #15799 awaiting payment via NOWPayments (USD Coin) (USDC) from Admin"
+    },
+    {
+      "id": "715a635b-c763-406a-9ba1-52a106ef3b96",
+      "timestamp": "2025-10-23T01:42:09.059Z",
+      "message": "NOWPayments (USD Coin) invoice created for order #15799"
+    },
+    {
+      "id": "42b6b681-c916-4e99-8c1b-1ff46149c608",
+      "timestamp": "2025-10-23T01:42:09.059Z",
+      "message": "Chat opened (Order #15799)"
+    },
+    {
+      "id": "d9a07c4e-b519-4535-be85-e4797280d46b",
+      "timestamp": "2025-10-23T01:52:38.737Z",
+      "message": "Order #81498 awaiting payment via NOWPayments (Ethereum) (ETH) from Admin"
+    },
+    {
+      "id": "554152a7-23da-4731-9e14-66a7ad92b9ef",
+      "timestamp": "2025-10-23T01:52:38.737Z",
+      "message": "NOWPayments (Ethereum) invoice created for order #81498"
+    },
+    {
+      "id": "7c48f9af-a1e3-43bf-8bff-b3b5e07bd6a8",
+      "timestamp": "2025-10-23T01:52:38.737Z",
+      "message": "Chat opened (Order #81498)"
+    },
+    {
+      "id": "7e1b2a91-f5e4-45fb-9920-1318a3948565",
+      "timestamp": "2025-10-23T01:53:06.059Z",
+      "message": "Order #79125 awaiting payment via NOWPayments (Bitcoin) (BTC) from Admin"
+    },
+    {
+      "id": "d7016187-d250-4069-81bb-45e58443f941",
+      "timestamp": "2025-10-23T01:53:06.059Z",
+      "message": "NOWPayments (Bitcoin) invoice created for order #79125"
+    },
+    {
+      "id": "b639e21d-db61-4ff1-acb8-46db92229563",
+      "timestamp": "2025-10-23T01:53:06.059Z",
+      "message": "Chat opened (Order #79125)"
+    },
+    {
+      "id": "a6637800-e17f-45ee-9386-364438960b6f",
+      "timestamp": "2025-10-23T01:53:14.729Z",
+      "message": "Order #23284 awaiting payment via NOWPayments (Ethereum) (ETH) from Admin"
+    },
+    {
+      "id": "edf9b5ba-5f99-4e61-97da-dbb63161c430",
+      "timestamp": "2025-10-23T01:53:14.729Z",
+      "message": "NOWPayments (Ethereum) invoice created for order #23284"
+    },
+    {
+      "id": "ec1d766f-6e6f-4c95-bbe8-801946cafb0b",
+      "timestamp": "2025-10-23T01:53:14.729Z",
+      "message": "Chat opened (Order #23284)"
+    },
+    {
+      "id": "c817df4e-31d8-4c1f-8f2f-ac89e38546bc",
+      "timestamp": "2025-10-23T01:53:19.063Z",
+      "message": "Order #74546 awaiting payment via NOWPayments (USD Coin) (USDC) from Admin"
+    },
+    {
+      "id": "6adb4718-1e22-4f32-95a3-cd65eaf905b0",
+      "timestamp": "2025-10-23T01:53:19.063Z",
+      "message": "NOWPayments (USD Coin) invoice created for order #74546"
+    },
+    {
+      "id": "fc401438-439f-4e9c-8d91-5a3ff30b50b9",
+      "timestamp": "2025-10-23T01:53:19.063Z",
+      "message": "Chat opened (Order #74546)"
+    },
+    {
+      "id": "7aae7efc-b51a-4c7b-97c7-5d2cbb722acf",
+      "timestamp": "2025-10-23T02:01:13.258Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "5257122d-cfc0-4a04-962e-ff8ef9557260",
+      "timestamp": "2025-10-23T02:01:21.041Z",
+      "message": "Order #55269 awaiting payment via NOWPayments (Tether USD (ERC-20)) (USDTERC20) from Admin"
+    },
+    {
+      "id": "1ccd97ea-6acf-41a9-8765-5c7917e36d14",
+      "timestamp": "2025-10-23T02:01:21.041Z",
+      "message": "NOWPayments (Tether USD (ERC-20)) invoice created for order #55269"
+    },
+    {
+      "id": "6121dff8-2fec-4c27-9ad2-2acfea875d1d",
+      "timestamp": "2025-10-23T02:01:21.041Z",
+      "message": "Chat opened (Order #55269)"
+    },
+    {
+      "id": "816dc731-a8e8-4c9f-bf3c-e8de727f7008",
+      "timestamp": "2025-10-23T02:13:37.625Z",
+      "message": "Order #77595 awaiting payment via NOWPayments (Ethereum) (ETH) from Admin"
+    },
+    {
+      "id": "71aafc03-ea23-4166-acc2-db8d05b4b56e",
+      "timestamp": "2025-10-23T02:13:37.625Z",
+      "message": "NOWPayments (Ethereum) invoice created for order #77595"
+    },
+    {
+      "id": "31c243b5-c3a4-413f-8651-681a16990b4a",
+      "timestamp": "2025-10-23T02:13:37.625Z",
+      "message": "Chat opened (Order #77595)"
+    },
+    {
+      "id": "6108fe10-8889-4421-92a0-d79055cd89d2",
+      "timestamp": "2025-10-23T02:15:21.855Z",
+      "message": "Order #58804 awaiting payment via NOWPayments (Bitcoin) (BTC) from Admin"
+    },
+    {
+      "id": "08cb7a8c-0737-4838-93f3-d5ff28bb94f9",
+      "timestamp": "2025-10-23T02:15:21.855Z",
+      "message": "NOWPayments (Bitcoin) invoice created for order #58804"
+    },
+    {
+      "id": "992dee17-0b03-43a7-8644-5fd4253153d9",
+      "timestamp": "2025-10-23T02:15:21.855Z",
+      "message": "Chat opened (Order #58804)"
+    },
+    {
+      "id": "77489251-079b-4a73-a91b-0eb252315bd8",
+      "timestamp": "2025-10-23T02:21:07.937Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "6875573b-c350-43ef-96bf-f14ee9f93b79",
+      "timestamp": "2025-10-23T02:23:21.836Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "2cbaeb4c-683c-47f9-abaa-53b357579723",
+      "timestamp": "2025-10-23T02:30:56.130Z",
+      "message": "New script added: 222 (111)"
+    },
+    {
+      "id": "ffbc10b7-f3fc-458f-95bf-27b9eb214764",
+      "timestamp": "2025-10-23T02:43:55.399Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "85c187c1-0400-4731-b418-46976b45d14f",
+      "timestamp": "2025-10-23T02:47:21.010Z",
+      "message": "New script added: tryetry (lkj)"
+    },
+    {
+      "id": "f2481344-6a6e-4deb-b3e5-891a2cc49fc6",
+      "timestamp": "2025-10-23T02:48:07.272Z",
+      "message": "View recorded for 111"
+    },
+    {
+      "id": "655d3e74-3c8f-485c-9b01-5d5dbadc9fe5",
+      "timestamp": "2025-10-23T02:51:28.964Z",
+      "message": "Script updated: tryetry (lkj)"
+    },
+    {
+      "id": "d18477cf-5124-43a8-bca4-f449ae6c0aee",
+      "timestamp": "2025-10-23T02:51:38.510Z",
+      "message": "Script updated: 222 (111)"
+    },
+    {
+      "id": "7ea5bab8-e8bb-4848-9721-469a03fcf0cb",
+      "timestamp": "2025-10-23T02:56:11.037Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "b3aaac71-bdae-4407-a604-95480345ac21",
+      "timestamp": "2025-10-23T03:03:37.278Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "667182a9-ad86-48cb-aaba-c7ad73674d08",
+      "timestamp": "2025-10-23T03:08:42.080Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "b55ac22e-739f-4dc5-8b3f-665c46f3410f",
+      "timestamp": "2025-10-23T03:09:17.447Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "84ba39a7-9b88-46de-853f-f59819c13802",
+      "timestamp": "2025-10-23T03:09:35.223Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "14e8c69b-375b-4d1a-b950-73cfd8ead604",
+      "timestamp": "2025-10-23T03:09:43.248Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "a65ceed9-d450-4e27-8186-6aee36d6c488",
+      "timestamp": "2025-10-23T03:09:55.667Z",
+      "message": "Order #54129 awaiting payment via NOWPayments (Tether USD (ERC-20)) (USDTERC20) from Admin"
+    },
+    {
+      "id": "02f863a8-ead4-4d62-9b4e-6236487443cf",
+      "timestamp": "2025-10-23T03:09:55.667Z",
+      "message": "NOWPayments (Tether USD (ERC-20)) invoice created for order #54129"
+    },
+    {
+      "id": "b9c80cd3-1a3d-4a8e-bac4-cde3b82c6fb7",
+      "timestamp": "2025-10-23T03:09:55.667Z",
+      "message": "Chat opened (Order #54129)"
+    },
+    {
+      "id": "4fb756a1-38a2-4cf8-9843-2091acd923ad",
+      "timestamp": "2025-10-23T03:13:54.993Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "92dce47d-1c62-49b4-ab97-95d92b8bf289",
+      "timestamp": "2025-10-23T03:14:01.187Z",
+      "message": "Order #16539 awaiting payment via NOWPayments (Tether USD (ERC-20)) (USDTERC20) from Admin"
+    },
+    {
+      "id": "303c09b3-c913-487b-a4f5-8405b2205553",
+      "timestamp": "2025-10-23T03:14:01.187Z",
+      "message": "NOWPayments (Tether USD (ERC-20)) invoice created for order #16539"
+    },
+    {
+      "id": "2bf8424a-d413-43e8-8d5f-ca8b5f30acf0",
+      "timestamp": "2025-10-23T03:14:01.187Z",
+      "message": "Chat opened (Order #16539)"
+    },
+    {
+      "id": "29074ead-347f-4077-81d3-98128eb923d1",
+      "timestamp": "2025-10-23T03:15:04.477Z",
+      "message": "Order #96701 awaiting payment via NOWPayments (Bitcoin) (BTC) from Admin"
+    },
+    {
+      "id": "9d030916-3ba5-4f48-b550-27b78da3b216",
+      "timestamp": "2025-10-23T03:15:04.477Z",
+      "message": "NOWPayments (Bitcoin) invoice created for order #96701"
+    },
+    {
+      "id": "7664580c-75da-4593-9d55-598856d9e0c5",
+      "timestamp": "2025-10-23T03:15:04.477Z",
+      "message": "Chat opened (Order #96701)"
+    },
+    {
+      "id": "86ff522b-ff83-42ea-b2b7-d4aeca126a54",
+      "timestamp": "2025-10-23T15:38:22.708Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "5cea35ab-9b39-430c-b560-023b4a5e6fa4",
+      "timestamp": "2025-10-23T15:41:45.133Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "5c927527-a564-4efd-a48b-9032d50221c1",
+      "timestamp": "2025-10-25T16:27:29.539Z",
+      "message": "Order #90686 awaiting payment via NOWPayments (Tether USD (ERC-20)) (USDTERC20) from Admin"
+    },
+    {
+      "id": "8ebefa07-faa1-4895-bde3-e1a2e5a698a5",
+      "timestamp": "2025-10-25T16:27:29.539Z",
+      "message": "NOWPayments (Tether USD (ERC-20)) invoice created for order #90686"
+    },
+    {
+      "id": "1cf299a7-6ffb-4d16-8d1f-8a2f23435c81",
+      "timestamp": "2025-10-25T16:27:29.540Z",
+      "message": "Chat opened (Order #90686)"
+    },
+    {
+      "id": "64a6a49c-02a2-4a77-bb7d-1fd0e362f64e",
+      "timestamp": "2025-10-26T13:04:28.447Z",
+      "message": "Order #78226 awaiting payment via NOWPayments (Ethereum) (ETH) from Admin"
+    },
+    {
+      "id": "06e17e0c-b234-4a3d-b662-7aa0ee894628",
+      "timestamp": "2025-10-26T13:04:28.447Z",
+      "message": "NOWPayments (Ethereum) invoice created for order #78226"
+    },
+    {
+      "id": "956c1eb6-224f-43cf-ace4-7c494513948d",
+      "timestamp": "2025-10-26T13:04:28.447Z",
+      "message": "Chat opened (Order #78226)"
+    },
+    {
+      "id": "785a1066-1e16-4777-a181-d061969d9eb7",
+      "timestamp": "2025-10-27T14:09:13.488Z",
+      "message": "Admin replied to chat #78226 (Admin)"
+    },
+    {
+      "id": "67dd13ef-54cc-4915-bc67-6b69c5d1150b",
+      "timestamp": "2025-10-27T14:10:03.348Z",
+      "message": "Admin closed chat #30219 (Alex#123)"
+    },
+    {
+      "id": "d331c834-523b-44a4-8d03-7c791cd691a7",
+      "timestamp": "2025-10-27T14:10:05.285Z",
+      "message": "Admin closed chat #44142 (Admin)"
+    },
+    {
+      "id": "ad260b1d-ce2b-4e97-bf19-3da7d0db93f1",
+      "timestamp": "2025-10-27T14:10:09.084Z",
+      "message": "Admin closed chat #71407 (Admin)"
+    },
+    {
+      "id": "0e514152-5c9d-4e53-b102-05d70e6d21bf",
+      "timestamp": "2025-10-27T14:10:11.780Z",
+      "message": "Admin reopened chat #44142 (Admin)"
+    },
+    {
+      "id": "04c41aa2-c015-42e0-9d66-e20f1b95a3e3",
+      "timestamp": "2025-10-27T14:10:27.629Z",
+      "message": "Admin replied to chat #44142 (Admin)"
+    },
+    {
+      "id": "3e260d71-2881-4761-ae9b-aea95e5cdec3",
+      "timestamp": "2025-10-27T15:03:13.338Z",
+      "message": "New script added: 2222 (1111)"
+    },
+    {
+      "id": "47f1f6b0-118c-465f-bd9e-423a3cf42cc7",
+      "timestamp": "2025-10-27T15:03:49.837Z",
+      "message": "View recorded for 1111"
+    },
+    {
+      "id": "7da47f16-95a1-4c87-ac7d-160d9071d15e",
+      "timestamp": "2025-10-27T15:26:27.581Z",
+      "message": "View recorded for 1111"
+    },
+    {
+      "id": "56bfa792-71ac-416e-83f5-109d067a76e8",
+      "timestamp": "2025-10-27T15:26:33.988Z",
+      "message": "View recorded for 1111"
+    },
+    {
+      "id": "b4468cac-9c85-462a-8a52-bce7140335c0",
+      "timestamp": "2025-10-27T15:26:35.081Z",
+      "message": "View recorded for 1111"
+    },
+    {
+      "id": "57cb5e6e-9468-45f4-8660-863798fdfeeb",
+      "timestamp": "2025-10-27T15:26:35.864Z",
+      "message": "View recorded for 1111"
+    },
+    {
+      "id": "de2c31de-6074-4707-b6ad-f28df64e18a8",
+      "timestamp": "2025-10-27T15:26:36.654Z",
+      "message": "View recorded for 1111"
+    },
+    {
+      "id": "3a0972c9-b6d4-406d-99c3-7cc677b531ce",
+      "timestamp": "2025-10-27T15:27:25.594Z",
+      "message": "Script updated: tryetry (lkj//////)"
+    },
+    {
+      "id": "5f504638-1fea-4621-893e-29bcf5b35e86",
+      "timestamp": "2025-10-27T15:27:35.562Z",
+      "message": "Script updated: 2222 (1111)"
+    },
+    {
+      "id": "38c3768a-d989-4860-82ac-8a948b46d73a",
+      "timestamp": "2025-10-27T15:32:35.227Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "41525286-d7e6-4f52-91f9-26a4d8900ead",
+      "timestamp": "2025-10-27T15:50:18.685Z",
+      "message": "Script updated: tryetry (lkj//////)"
+    },
+    {
+      "id": "a2ddda3d-8712-41db-9619-af2e20717718",
+      "timestamp": "2025-10-27T15:50:47.291Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "93b8f613-5993-4994-8d2f-d04b2d3f3a50",
+      "timestamp": "2025-10-27T15:50:52.205Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "63d4810f-5a91-479c-996d-e556bbd6111c",
+      "timestamp": "2025-10-27T15:51:15.981Z",
+      "message": "Script updated: 222 (111lkllklkl)"
+    },
+    {
+      "id": "033abdcb-bac0-4476-8167-ad0770ca8bed",
+      "timestamp": "2025-10-27T15:51:33.763Z",
+      "message": "Script updated: 2222 (1111)"
+    },
+    {
+      "id": "2d341335-0e9f-40bc-8e41-023251ce5eee",
+      "timestamp": "2025-10-27T15:51:43.870Z",
+      "message": "View recorded for 1111"
+    },
+    {
+      "id": "616a252e-14d9-4fbb-9de6-98da42c3436a",
+      "timestamp": "2025-10-27T15:51:49.060Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "47cd22b5-78cc-46bc-b394-b1bbb507e80f",
+      "timestamp": "2025-10-27T15:52:08.616Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "c3c4cbee-b589-4d40-93a2-b0a57b728893",
+      "timestamp": "2025-10-29T09:15:13.722Z",
+      "message": "Script deleted: 2222 (1111)"
+    },
+    {
+      "id": "15a04688-6c4f-4e36-80eb-b0e5a185bfde",
+      "timestamp": "2025-10-29T19:21:29.656Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "907ae0be-813b-494d-932b-86bbb9630f5f",
+      "timestamp": "2025-10-29T19:21:52.223Z",
+      "message": "Script deleted: tryetry (lkj//////)"
+    },
+    {
+      "id": "d82f8604-9d45-4696-91ae-447913d025ba",
+      "timestamp": "2025-10-29T22:33:11.028Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "d98fe358-cff3-4a0d-95a0-f20b971b8f14",
+      "timestamp": "2025-10-29T22:33:38.400Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "3e3fa649-6af4-41f6-ac20-f1de9b7b1571",
+      "timestamp": "2025-10-30T11:37:53.336Z",
+      "message": "User didd registered"
+    },
+    {
+      "id": "e57afdf0-d336-4093-bd12-ce8bb606727c",
+      "timestamp": "2025-10-30T11:47:10.900Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "f1c62dc5-7a8b-4b07-8ef0-dbe7b8c04a98",
+      "timestamp": "2025-10-30T11:49:48.132Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "ef765f4b-efd9-48e2-b9fc-5a2d31d2b574",
+      "timestamp": "2025-10-30T12:06:01.569Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "81f4ab8e-06b3-4d8e-b07d-031e62a66591",
+      "timestamp": "2025-10-30T12:06:44.483Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "e454f58f-1e2b-4e54-a01e-df6c7dc987c5",
+      "timestamp": "2025-10-30T12:07:04.991Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "0e846ea9-1c17-4e03-ba2d-a6d051ed2b7d",
+      "timestamp": "2025-10-30T12:07:47.424Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "ad2ec888-2f93-4e4a-9fb7-3f775091bdd8",
+      "timestamp": "2025-10-30T12:07:55.312Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "9337dde6-d40c-488e-828f-c13d0863ca47",
+      "timestamp": "2025-10-30T12:08:06.430Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "bbe42f33-296f-4cd2-8abe-bee992315713",
+      "timestamp": "2025-10-30T12:09:24.364Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "a80e2dde-3bcf-4f12-a6e3-cf07ff267b5a",
+      "timestamp": "2025-10-30T12:09:38.105Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "fa80181f-3967-402c-a0a4-16bdc596c7e7",
+      "timestamp": "2025-10-30T12:10:21.533Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "a44497ff-2fd8-4388-b4cd-2b2da2e66468",
+      "timestamp": "2025-10-30T12:10:27.425Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "c7a26b28-a846-48da-8b11-12c3bd062280",
+      "timestamp": "2025-10-30T12:10:32.928Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "0164b3ba-2f78-40a6-9cd2-cb87b65e43e6",
+      "timestamp": "2025-10-30T12:10:43.694Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "ce72fee7-08d9-47df-97de-17b0fba62cab",
+      "timestamp": "2025-10-30T12:11:38.566Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "7c0b9d33-602c-4ea7-ae0d-57e5dcc4ca21",
+      "timestamp": "2025-10-30T12:11:48.529Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "f89e7335-af03-4283-9452-f5dfd647772b",
+      "timestamp": "2025-10-30T12:12:13.340Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "c9ab41ac-d330-4a4f-80b5-af03087c6cf2",
+      "timestamp": "2025-10-30T12:13:13.532Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "a43583af-f1bc-4b35-989a-43f904b5d845",
+      "timestamp": "2025-10-30T12:33:35.058Z",
+      "message": "View recorded for 111lkllklkl"
+    },
+    {
+      "id": "442e710c-9bed-4c42-9ed4-6eede6e13d5a",
+      "timestamp": "2025-10-30T13:28:33.282Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "e6eaf24b-a59e-4a5a-90e7-9737c8ea2073",
+      "timestamp": "2025-10-30T13:29:02.104Z",
+      "message": "Script deleted: 222 (111lkllklkl)"
+    },
+    {
+      "id": "cbecec36-a5d6-40c0-be2c-fc4442a03a25",
+      "timestamp": "2025-10-30T13:36:17.018Z",
+      "message": "New script added: BlackHawk Rescue Mission (blackhawk-rescue-mission)"
+    },
+    {
+      "id": "c0fb0170-ea55-42e0-842c-178cb0ca9f2b",
+      "timestamp": "2025-10-30T13:36:29.481Z",
+      "message": "View recorded for blackhawk-rescue-mission"
+    },
+    {
+      "id": "0e980f73-7ae3-499a-b9e3-c880f7cb0d32",
+      "timestamp": "2025-10-30T20:00:45.217Z",
+      "message": "User Didde registered"
+    },
+    {
+      "id": "8caecc22-4144-4360-bf22-15857632fc17",
+      "timestamp": "2025-10-30T23:00:57.751Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "8bc62a39-ded2-49b3-9a4e-87be4a028544",
+      "timestamp": "2025-10-30T23:05:24.086Z",
+      "message": "New script added: Westbound  (westbound)"
+    },
+    {
+      "id": "aea3c5ee-c7cc-47ba-9f55-dcc2579d314c",
+      "timestamp": "2025-10-30T23:06:52.444Z",
+      "message": "New script added: Bloxburg (bloxburg)"
+    },
+    {
+      "id": "fbd60494-39ee-488e-9948-63e7d80eecd1",
+      "timestamp": "2025-10-30T23:07:58.579Z",
+      "message": "New script added: Military Tycoon (military-tycoon)"
+    },
+    {
+      "id": "6390f6f9-0371-417f-96f9-d23975638ca7",
+      "timestamp": "2025-10-30T23:10:45.715Z",
+      "message": "New script added: Survive The Sniper (survive-the-sniper)"
+    },
+    {
+      "id": "533cede1-5802-48c0-9b1c-f07545b37e9d",
+      "timestamp": "2025-10-30T23:12:07.453Z",
+      "message": "View recorded for westbound"
+    },
+    {
+      "id": "cc6f731a-9edf-4713-983e-2d91ea5b4c91",
+      "timestamp": "2025-10-30T23:14:02.585Z",
+      "message": "New script added: BedWars  (bedwars-script)"
+    },
+    {
+      "id": "f799e74b-b4b0-4c52-80bd-b48a3a2134b0",
+      "timestamp": "2025-10-30T23:16:13.556Z",
+      "message": "New script added: Rivals  (rivals-script)"
+    },
+    {
+      "id": "fdcf0d56-be35-4ef8-ae52-816dffec6ced",
+      "timestamp": "2025-10-30T23:18:07.555Z",
+      "message": "New script added: HyperShot (hypershot)"
+    },
+    {
+      "id": "61ccf6e2-171f-4aff-bc5c-4915ff42e1fd",
+      "timestamp": "2025-10-30T23:19:10.454Z",
+      "message": "New script added: Arsenal (arsenal-script)"
+    },
+    {
+      "id": "26f14a75-6fa9-455d-bc17-b3d577e56d50",
+      "timestamp": "2025-10-30T23:21:03.708Z",
+      "message": "New script added: Cut Trees (cut-trees-script)"
+    },
+    {
+      "id": "4df55e15-a323-464a-8216-6224471225f6",
+      "timestamp": "2025-10-30T23:23:43.423Z",
+      "message": "New script added: Stean A Brainrot (steal-a-brainrot-script)"
+    },
+    {
+      "id": "248c517a-7399-4da7-b464-39cc2bcb12a2",
+      "timestamp": "2025-10-30T23:25:34.343Z",
+      "message": "New script added: Brainrot Royal (brainrot-royal-script)"
+    },
+    {
+      "id": "6816faa6-223b-43d5-b11c-3e6975d5b1e8",
+      "timestamp": "2025-10-30T23:27:31.510Z",
+      "message": "New script added: Big Paintball 2 (big-paintball)"
+    },
+    {
+      "id": "35ebcbf0-120b-4825-aa8a-f73203365171",
+      "timestamp": "2025-10-30T23:28:43.177Z",
+      "message": "New script added: Fix It Up (fix-it-up)"
+    },
+    {
+      "id": "f83063a0-3d44-42f6-8f8f-40894345c8b5",
+      "timestamp": "2025-10-30T23:33:24.619Z",
+      "message": "New script added: Anime Eternal  (anime-eternal-script)"
+    },
+    {
+      "id": "ff4896f2-0bd1-42d2-a31f-210c81e89b56",
+      "timestamp": "2025-10-30T23:35:17.137Z",
+      "message": "New script added: Boat Builder (build-a-boat-script)"
+    },
+    {
+      "id": "572a1039-578e-4ef3-b1e5-30fe94a98169",
+      "timestamp": "2025-10-30T23:36:55.322Z",
+      "message": "View recorded for blackhawk-rescue-mission"
+    },
+    {
+      "id": "5357af92-7ff6-49b2-b188-3aef86461aa9",
+      "timestamp": "2025-10-31T00:45:03.320Z",
+      "message": "New script added: Privat Server Script (privat-server-script)"
+    },
+    {
+      "id": "2be1ef7a-17e5-4e61-b59e-825c0da71f27",
+      "timestamp": "2025-10-31T00:47:36.601Z",
+      "message": "New script added: Anime Ranger X  (anime-ranger-x-script)"
+    },
+    {
+      "id": "23c2db0f-fbe1-462d-aa3c-5446a2e290fc",
+      "timestamp": "2025-10-31T00:54:32.313Z",
+      "message": "New script added: Blox Fruits (blox-fruits)"
+    },
+    {
+      "id": "e41e40df-cbe5-44ef-a022-b0555c8a6fb4",
+      "timestamp": "2025-10-31T00:56:51.979Z",
+      "message": "New script added: Plants VS Brainrot (plants-vs-brainrot)"
+    },
+    {
+      "id": "f61309c3-9467-48ae-a01a-28375798befe",
+      "timestamp": "2025-10-31T00:59:17.845Z",
+      "message": "New script added: AFK Script (afk-script)"
+    },
+    {
+      "id": "0462d5a4-b229-4329-a062-4ec2ba18eb69",
+      "timestamp": "2025-10-31T01:00:26.145Z",
+      "message": "New script added: Grow A Garden (grow-a-garden-script)"
+    },
+    {
+      "id": "7a0fb825-a1f3-4ae6-875f-02585521dc0b",
+      "timestamp": "2025-10-31T01:05:06.247Z",
+      "message": "New script added: Blockspin (blockspin-script)"
+    },
+    {
+      "id": "393bff6d-b8ba-4732-9a6c-ea156b1d8dde",
+      "timestamp": "2025-10-31T01:10:14.711Z",
+      "message": "New script added: Break Your Bones (break-ypur-bones-script)"
+    },
+    {
+      "id": "af68ef96-84cf-4a54-913a-91aa5ad52654",
+      "timestamp": "2025-10-31T01:11:23.142Z",
+      "message": "New script added: Hunty Zombie (hunty-zombie)"
+    },
+    {
+      "id": "0245d3ea-4003-43a4-8437-e6a468d5bd2b",
+      "timestamp": "2025-10-31T01:13:07.628Z",
+      "message": "New script added: Grow a kingdom (grow-a-kingdom-script)"
+    },
+    {
+      "id": "d72ba7b6-f37d-4a30-a63d-4da22460586f",
+      "timestamp": "2025-10-31T01:14:02.248Z",
+      "message": "Script updated: Fix It Up (fix-it-up)"
+    },
+    {
+      "id": "10d823db-d90e-4373-b0e4-516ee1fb305d",
+      "timestamp": "2025-10-31T01:14:21.359Z",
+      "message": "Script updated: Blox Fruits (blox-fruits)"
+    },
+    {
+      "id": "88cc3044-579b-4883-aee9-6269188a576f",
+      "timestamp": "2025-10-31T01:14:32.376Z",
+      "message": "Script updated: Blockspin (blockspin-script)"
+    },
+    {
+      "id": "a6591c60-4489-472c-9c7d-f15fbfd7d0e2",
+      "timestamp": "2025-10-31T01:15:56.118Z",
+      "message": "View recorded for anime-eternal-script"
+    },
+    {
+      "id": "2ed0a5d6-2162-4798-ae23-32f3842f4331",
+      "timestamp": "2025-10-31T01:16:27.380Z",
+      "message": "Script updated: Anime Eternal  (anime-eternal-script)"
+    },
+    {
+      "id": "be05d0f5-1877-4e0d-821f-b0f849f57382",
+      "timestamp": "2025-10-31T01:16:43.118Z",
+      "message": "View recorded for anime-eternal-script"
+    },
+    {
+      "id": "6a62239b-f167-4afb-a3b9-24a88b28d993",
+      "timestamp": "2025-10-31T01:17:22.407Z",
+      "message": "Script updated: Anime Eternal  (anime-eternal-script)"
+    },
+    {
+      "id": "b0e7e7f0-1961-440c-8bcf-634b60f59822",
+      "timestamp": "2025-10-31T01:17:33.371Z",
+      "message": "View recorded for anime-eternal-script"
+    },
+    {
+      "id": "e17f2f81-6ed4-4150-83ef-66c41e895d14",
+      "timestamp": "2025-10-31T10:23:58.030Z",
+      "message": "New script added: Murder Mystery 2 (murder.mystery-2)"
+    },
+    {
+      "id": "e71a2b81-0a70-44f1-a885-717f08552308",
+      "timestamp": "2025-10-31T10:28:36.358Z",
+      "message": "New script added: 99 Nights In The Forest (99-nights-in-the-forest-script)"
+    },
+    {
+      "id": "0570330b-fe83-4ee9-90f8-b5b5e75a20d5",
+      "timestamp": "2025-10-31T10:29:17.905Z",
+      "message": "Script updated: Westbound  (westbound)"
+    },
+    {
+      "id": "354461cb-28fd-4e77-aa36-b93fac66fb66",
+      "timestamp": "2025-10-31T10:30:59.307Z",
+      "message": "New script added: Resturan Tycoon 3 (resturant-tycoon-3-script)"
+    },
+    {
+      "id": "5618e913-3879-41d3-ace2-4a017211dd17",
+      "timestamp": "2025-10-31T10:33:22.623Z",
+      "message": "New script added: Forsaken (forsaken-script)"
+    },
+    {
+      "id": "6d850287-961d-4789-8cd5-930003aa88c0",
+      "timestamp": "2025-11-01T01:09:19.988Z",
+      "message": "Order #39144 awaiting payment via NOWPayments (Bitcoin) (BTC) from Admin"
+    },
+    {
+      "id": "6baba690-8e69-44ce-b76b-d808ba8fb5f1",
+      "timestamp": "2025-11-01T01:09:19.988Z",
+      "message": "NOWPayments (Bitcoin) invoice created for order #39144"
+    },
+    {
+      "id": "e33e04a1-9e93-459a-a6d5-2bb37aee5b75",
+      "timestamp": "2025-11-01T01:09:19.988Z",
+      "message": "Chat opened (Order #39144)"
+    },
+    {
+      "id": "13d756be-7f82-4839-b3b4-ea1f99709ee4",
+      "timestamp": "2025-11-01T01:14:34.981Z",
+      "message": "Admin replied to chat #39144 (Admin)"
+    },
+    {
+      "id": "353e0fec-c2f1-47db-8ccd-48be41103b1b",
+      "timestamp": "2025-11-01T01:15:07.330Z",
+      "message": "Admin closed chat #44142 (Admin)"
+    },
+    {
+      "id": "6576a950-cc37-4b89-8b16-61dc57b7852f",
+      "timestamp": "2025-11-01T18:39:03.210Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "eff84d06-ef4c-4d68-b228-288ef5a2067d",
+      "timestamp": "2025-11-01T19:47:25.352Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "f14b1688-c2d5-4669-bcca-fb1a37d5cae4",
+      "timestamp": "2025-11-01T19:57:54.875Z",
+      "message": "User Didde registered"
+    },
+    {
+      "id": "6ca4a75c-5686-466f-8c1a-fb0df2bfb8ec",
+      "timestamp": "2025-11-01T19:59:13.291Z",
+      "message": "Order #49378 awaiting payment via NOWPayments (Ethereum) (ETH) from Didde"
+    },
+    {
+      "id": "f39d3bbd-2df5-4bae-bda6-f942add4cf3c",
+      "timestamp": "2025-11-01T19:59:13.291Z",
+      "message": "NOWPayments (Ethereum) invoice created for order #49378"
+    },
+    {
+      "id": "53313d56-c20a-470d-96f7-4cb1dfd7dba1",
+      "timestamp": "2025-11-01T19:59:13.291Z",
+      "message": "Chat opened (Order #49378)"
+    },
+    {
+      "id": "5652e83a-54e5-4cd2-a2d5-cec883d94800",
+      "timestamp": "2025-11-01T23:02:42.611Z",
+      "message": "View recorded for plants-vs-brainrot"
+    },
+    {
+      "id": "bf468150-85c2-4f54-85eb-bd650ec95348",
+      "timestamp": "2025-11-01T23:03:27.210Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "cb5624b9-df68-455f-8e5c-d1ab90134cd2",
+      "timestamp": "2025-11-01T23:06:19.199Z",
+      "message": "New script added: Jump And Splash (jump-and-splash)"
+    },
+    {
+      "id": "2ad30ab0-7f25-4df6-83a7-fab14cc259bd",
+      "timestamp": "2025-11-01T23:06:45.032Z",
+      "message": "View recorded for jump-and-splash"
+    },
+    {
+      "id": "8375d7d8-629a-49a3-ad9d-90712f1bf15a",
+      "timestamp": "2025-11-01T23:06:54.698Z",
+      "message": "View recorded for anime-ranger-x-script"
+    },
+    {
+      "id": "e55f6e9c-6152-4e6f-8533-feebd36e94e1",
+      "timestamp": "2025-11-01T23:07:00.900Z",
+      "message": "View recorded for plants-vs-brainrot"
+    },
+    {
+      "id": "4586cb43-e3bb-4e9e-91c1-abc732794e22",
+      "timestamp": "2025-11-02T00:20:39.561Z",
+      "message": "Script updated: BlackHawk Rescue Mission (blackhawk-rescue-mission)"
+    },
+    {
+      "id": "b350de10-8bd0-48bb-b5a0-404b117560d6",
+      "timestamp": "2025-11-04T12:55:59.376Z",
+      "message": "New script added: Prison Life (prision-life-script)"
+    },
+    {
+      "id": "d7ba673e-7a3c-452c-a177-cedf4df152f6",
+      "timestamp": "2025-11-04T12:57:57.722Z",
+      "message": "Script updated: Prison Life (prision-life-script)"
+    },
+    {
+      "id": "f1ccacf4-d572-481e-b11c-6fe78cfe4b60",
+      "timestamp": "2025-11-04T19:14:56.877Z",
+      "message": "View recorded for cut-trees-script"
+    },
+    {
+      "id": "6d542581-d473-4499-8a33-9bd3dfa61a76",
+      "timestamp": "2025-11-04T19:15:43.836Z",
+      "message": "View recorded for blox-fruits-script"
+    },
+    {
+      "id": "42ebc2fd-ca65-4bef-a4b6-4d6290182aca",
+      "timestamp": "2025-11-04T19:17:04.364Z",
+      "message": "View recorded for blockspin-script"
+    },
+    {
+      "id": "86a0832d-6490-4ecc-a867-8fbe2b48f2d3",
+      "timestamp": "2025-11-04T19:17:25.779Z",
+      "message": "View recorded for grow-a-garden-script"
+    },
+    {
+      "id": "1c79a2d9-9c4e-4816-95bd-711f64bdee2f",
+      "timestamp": "2025-11-04T19:20:45.438Z",
+      "message": "View recorded for survive-the-sniper"
+    },
+    {
+      "id": "317abf49-a2cf-4b0c-bffb-b4717cd9607d",
+      "timestamp": "2025-11-04T19:23:36.304Z",
+      "message": "View recorded for survive-the-sniper"
+    },
+    {
+      "id": "eccadbb5-ad58-48fa-80fd-f4ed26a42899",
+      "timestamp": "2025-11-09T19:50:53.663Z",
+      "message": "View recorded for prison-life-script"
+    },
+    {
+      "id": "2fcaadd3-e320-4ee3-956b-262caa780fca",
+      "timestamp": "2025-11-09T19:51:06.494Z",
+      "message": "View recorded for prison-life-script"
+    },
+    {
+      "id": "1068a8fe-5fd6-46ec-ac54-7a0548f1e487",
+      "timestamp": "2025-11-09T19:51:08.489Z",
+      "message": "View recorded for prison-life-script"
+    },
+    {
+      "id": "97dd44e6-cb6d-40c0-bac4-7a00382ad157",
+      "timestamp": "2025-11-09T19:51:09.287Z",
+      "message": "View recorded for prison-life-script"
+    },
+    {
+      "id": "d379fabc-df11-437c-b1ab-eeaedfa6b34b",
+      "timestamp": "2025-11-09T19:51:37.524Z",
+      "message": "View recorded for prison-life-script"
+    },
+    {
+      "id": "f691de71-bbd7-4f84-a47f-3bcdb5ae1a8a",
+      "timestamp": "2025-11-09T19:51:57.311Z",
+      "message": "View recorded for prison-life-script"
+    },
+    {
+      "id": "60f8c406-aa4c-4158-81e6-d1259e64277c",
+      "timestamp": "2025-11-09T19:52:01.274Z",
+      "message": "View recorded for grow-a-garden-script"
+    },
+    {
+      "id": "977a6835-b3fe-4272-814f-b8bd48f4f2d5",
+      "timestamp": "2025-11-09T19:52:06.709Z",
+      "message": "View recorded for grow-a-garden-script"
+    },
+    {
+      "id": "a5675e12-95f8-4c81-b61c-d6b6ae2357d1",
+      "timestamp": "2025-11-09T19:55:56.158Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "e339c944-0d2a-437f-a84c-7d1b9f3dff2b",
+      "timestamp": "2025-12-04T22:55:27.900Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "11f4d024-e435-4e8c-9d2a-ea4cdd0cd1e5",
+      "timestamp": "2025-12-04T22:59:19.517Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "34c4dca2-c8a6-4ede-859e-2779ac32bc95",
+      "timestamp": "2025-12-04T22:59:52.370Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "07c5be78-687d-4361-a000-b402a8865d4f",
+      "timestamp": "2025-12-04T23:02:31.603Z",
+      "message": "User Admin logged in"
+    }
+  ],
+  "scripts": [
+    {
+      "slug": "blackhawk-rescue-mission",
+      "title": "BlackHawk Rescue Mission",
+      "short": "",
+      "category": "shooter",
+      "tags": [
+        "pc-only",
+        "no-key",
+        "mobile",
+        "executor-required",
+        "premium",
+        "free",
+        "beta",
+        "stable"
+      ],
+      "features": [
+        "ESP",
+        "Aimbot",
+        "Infinite Jump",
+        "Teleport",
+        "Auto Collect",
+        "Auto Farm",
+        "God Mode",
+        "Noclip",
+        "Fly",
+        "Speed",
+        "Auto Buy",
+        "No Cooldown",
+        "Auto Sell"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/f45efdd1-de0d-4792-8bde-12738142e868.png",
+      "workink_url": "https://workink.net/24rQ/gtmaf08u",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-30",
+      "updated_at": "2025-11-02",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "8/10 Script",
+      "views": 0
+    },
+    {
+      "slug": "westbound-script",
+      "title": "Westbound ",
+      "short": "",
+      "category": "fighting",
+      "tags": [
+        "no-key",
+        "executor-required",
+        "mobile"
+      ],
+      "features": [
+        "ESP",
+        "Aimbot",
+        "Auto Collect",
+        "Teleport",
+        "Auto Buy"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/ad9e0eb8-e505-4986-9387-e5df2e0262e0.png",
+      "workink_url": "https://workink.net/24rQ/aqkssnoq",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-30",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "6/10",
+      "views": 0
+    },
+    {
+      "slug": "bloxburg",
+      "title": "Bloxburg",
+      "short": "",
+      "category": "misc",
+      "tags": [
+        "mobile",
+        "executor-required"
+      ],
+      "features": [
+        "Auto Farm",
+        "Teleport",
+        "Auto Collect"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/02cca360-b446-4905-ab41-c92390ef629e.png",
+      "workink_url": "https://workink.net/24rQ/ekrgw2zw",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-30",
+      "updated_at": "2025-10-30",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "9/10",
+      "views": 0
+    },
+    {
+      "slug": "military-tycoon",
+      "title": "Military Tycoon",
+      "short": "",
+      "category": "tycoon",
+      "tags": [
+        "mobile",
+        "executor-required"
+      ],
+      "features": [
+        "ESP",
+        "Aimbot",
+        "Fly",
+        "Noclip",
+        "Auto Farm",
+        "Auto Collect"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/a0941b11-ba43-4866-9195-321e3dd684c4.png",
+      "workink_url": "https://workink.net/24rQ/l5rv4kbd",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-30",
+      "updated_at": "2025-10-30",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "8/10",
+      "views": 0
+    },
+    {
+      "slug": "survive-the-sniper",
+      "title": "Survive The Sniper",
+      "short": "",
+      "category": "shooter",
+      "tags": [
+        "no-key",
+        "mobile",
+        "executor-required"
+      ],
+      "features": [
+        "Noclip",
+        "God Mode",
+        "Teleport",
+        "Aimbot",
+        "ESP"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/ff0965ad-623a-43d9-89c9-10eefaec18a7.png",
+      "workink_url": "https://workink.net/24rQ/cmmb8hdt",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-30",
+      "updated_at": "2025-10-30",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "7/10",
+      "views": 0
+    },
+    {
+      "slug": "bedwars-script",
+      "title": "BedWars ",
+      "short": "",
+      "category": "fighting",
+      "tags": [
+        "no-key"
+      ],
+      "features": [
+        "ESP",
+        "Aimbot",
+        "Speed",
+        "Fly",
+        "Noclip",
+        "Auto Collect",
+        "Teleport"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/e532d3b0-3ddb-415c-ae1d-60e64e640cdc.png",
+      "workink_url": "https://workink.net/24rQ/md5g0zeb",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-30",
+      "updated_at": "2025-10-30",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "8/10",
+      "views": 0
+    },
+    {
+      "slug": "rivals-script",
+      "title": "Rivals ",
+      "short": "",
+      "category": "shooter",
+      "tags": [
+        "executor-required"
+      ],
+      "features": [
+        "ESP",
+        "Aimbot"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/b0d81222-3d55-47a7-8738-37b57b972b12.png",
+      "workink_url": "https://workink.net/24rQ/kix409m8",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-30",
+      "updated_at": "2025-10-30",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "6/10",
+      "views": 0
+    },
+    {
+      "slug": "hypershot",
+      "title": "HyperShot",
+      "short": "",
+      "category": "shooter",
+      "tags": [
+        "executor-required"
+      ],
+      "features": [
+        "ESP",
+        "Aimbot",
+        "Teleport"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/0a4d8718-ed1c-4182-b050-f7377573f28d.png",
+      "workink_url": "https://workink.net/24rQ/pjmfw2vk",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-30",
+      "updated_at": "2025-10-30",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "7/10",
+      "views": 0
+    },
+    {
+      "slug": "arsenal-script",
+      "title": "Arsenal",
+      "short": "",
+      "category": "shooter",
+      "tags": [],
+      "features": [
+        "ESP",
+        "Aimbot"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/8ffec3d6-73ea-4b2d-b47e-098834af9782.png",
+      "workink_url": "https://workink.net/24rQ/5doqwpdm",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-30",
+      "updated_at": "2025-10-30",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "7/10",
+      "views": 0
+    },
+    {
+      "slug": "cut-trees-script",
+      "title": "Cut Trees",
+      "short": "",
+      "category": "simulator",
+      "tags": [
+        "mobile"
+      ],
+      "features": [
+        "Auto Collect",
+        "Auto Farm",
+        "No Cooldown"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/af708d0b-3c67-408f-a0e4-c60bf7ade725.png",
+      "workink_url": "https://workink.net/24rQ/irslz3uj",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-30",
+      "updated_at": "2025-10-30",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "9/10",
+      "views": 0
+    },
+    {
+      "slug": "steal-a-brainrot-script",
+      "title": "Stean A Brainrot",
+      "short": "",
+      "category": "simulator",
+      "tags": [
+        "executor-required",
+        "mobile"
+      ],
+      "features": [
+        "ESP",
+        "Speed",
+        "Noclip"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/3719135b-5c70-4200-af55-861cdabb4706.png",
+      "workink_url": "https://workink.net/24rQ/ep7p9nnm",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-30",
+      "updated_at": "2025-10-30",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "4/10",
+      "views": 0
+    },
+    {
+      "slug": "brainrot-royal-script",
+      "title": "Brainrot Royal",
+      "short": "",
+      "category": "fighting",
+      "tags": [
+        "no-key"
+      ],
+      "features": [
+        "Auto Farm",
+        "Auto Collect",
+        "Auto Buy",
+        "Auto Sell"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/a26fb941-16c7-4755-8920-e0ed9e507a54.png",
+      "workink_url": "https://workink.net/24rQ/9uhxn51n",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-30",
+      "updated_at": "2025-10-30",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "8/10",
+      "views": 0
+    },
+    {
+      "slug": "big-paintball",
+      "title": "Big Paintball 2",
+      "short": "",
+      "category": "shooter",
+      "tags": [
+        "no-key"
+      ],
+      "features": [
+        "God Mode"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/dddfc580-4ff2-4e74-bfe2-02dccac82e41.png",
+      "workink_url": "https://workink.net/24rQ/3p8cmplt",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-30",
+      "updated_at": "2025-10-30",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "7/10\n\nOnly teleports all enemies in front of you",
+      "views": 0
+    },
+    {
+      "slug": "fix-it-up-script",
+      "title": "Fix It Up",
+      "short": "",
+      "category": "simulator",
+      "tags": [
+        "no-key",
+        "mobile",
+        "executor-required"
+      ],
+      "features": [
+        "Auto Farm",
+        "Auto Buy",
+        "Auto Sell"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/5ec69b7c-3ef1-42d3-a78e-f84cbd7be8fe.png",
+      "workink_url": "https://workink.net/24rQ/vpzkrgwh",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-30",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "9/10",
+      "views": 0
+    },
+    {
+      "slug": "anime-eternal-script",
+      "title": "Anime Eternal ",
+      "short": "",
+      "category": "fighting",
+      "tags": [],
+      "features": [
+        "Auto Farm",
+        "ESP",
+        "Speed",
+        "Noclip"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/a8f3b6d0-1c01-4bee-b193-559c4f7fab5b.png",
+      "workink_url": "https://workink.net/24rQ/lxxmap0m",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-30",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "8/10",
+      "views": 0
+    },
+    {
+      "slug": "build-a-boat-script",
+      "title": "Boat Builder",
+      "short": "",
+      "category": "adventure",
+      "tags": [
+        "mobile",
+        "executor-required"
+      ],
+      "features": [
+        "Auto Farm",
+        "Auto Collect"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/9eaadd4e-bd34-4843-aa11-55f46233c295.png",
+      "workink_url": "https://workink.net/24rQ/ibwhjgx2",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-30",
+      "updated_at": "2025-10-30",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "6/10",
+      "views": 0
+    },
+    {
+      "slug": "privat-server-script",
+      "title": "Privat Server Script",
+      "short": "",
+      "category": "misc",
+      "tags": [
+        "no-key",
+        "executor-required"
+      ],
+      "features": [
+        "Teleport"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/d37a36b4-9def-47ee-a156-cfbe85800987.png",
+      "workink_url": "https://workink.net/24rQ/c6qtc2d3",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-31",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "Make a private server to any game with this script",
+      "views": 0
+    },
+    {
+      "slug": "anime-ranger-x-script",
+      "title": "Anime Ranger X ",
+      "short": "",
+      "category": "fighting",
+      "tags": [
+        "executor-required"
+      ],
+      "features": [
+        "Auto Farm"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/592fdf0c-348a-4ce0-80e6-2839c2ea4e3b.jpg",
+      "workink_url": "https://work.ink/24rQ/yhvz9znn",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-31",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "7/10",
+      "views": 0
+    },
+    {
+      "slug": "blox-fruits-script",
+      "title": "Blox Fruits",
+      "short": "",
+      "category": "fighting",
+      "tags": [
+        "executor-required"
+      ],
+      "features": [
+        "Auto Farm",
+        "Auto Buy",
+        "Auto Sell"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/89d6ede6-db9f-4593-bf6c-100a304eac62.jpg",
+      "workink_url": "https://workink.net/24rQ/2gdpr5k7",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-31",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "7/10",
+      "views": 0
+    },
+    {
+      "slug": "plants-vs-brainrot",
+      "title": "Plants VS Brainrot",
+      "short": "",
+      "category": "fighting",
+      "tags": [
+        "no-key",
+        "mobile"
+      ],
+      "features": [
+        "Auto Farm",
+        "Auto Buy",
+        "Auto Sell",
+        "Auto Collect"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/f420e349-4576-4d95-a370-3c4301f0d3a7.png",
+      "workink_url": "https://workink.net/24rQ/2mi0pnx3",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-31",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "8/10",
+      "views": 0
+    },
+    {
+      "slug": "afk-script",
+      "title": "AFK Script",
+      "short": "",
+      "category": "misc",
+      "tags": [
+        "executor-required",
+        "mobile"
+      ],
+      "features": [],
+      "thumbnail": "http://localhost:5174/images/scripts/b33d1a02-505b-4ce5-9929-7436b70eb256.jpg",
+      "workink_url": "https://workink.net/24rQ/rmofysrd",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-31",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "10/10\nA simple AFK script\n",
+      "views": 0
+    },
+    {
+      "slug": "grow-a-garden-script",
+      "title": "Grow A Garden",
+      "short": "",
+      "category": "simulator",
+      "tags": [
+        "mobile",
+        "executor-required"
+      ],
+      "features": [
+        "Auto Farm",
+        "Auto Collect"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/7c3fb17d-5c76-4ca4-b139-cababbda3921.png",
+      "workink_url": "https://workink.net/24rQ/prfztu1p",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-31",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "7/10",
+      "views": 0
+    },
+    {
+      "slug": "blockspin-script",
+      "title": "Blockspin",
+      "short": "",
+      "category": "fighting",
+      "tags": [
+        "mobile",
+        "executor-required"
+      ],
+      "features": [
+        "ESP",
+        "Aimbot",
+        "Auto Farm",
+        "Auto Collect",
+        "Teleport",
+        "Noclip"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/fc9441f3-4f81-41d9-abd1-a71f95156eb6.png",
+      "workink_url": "https://workink.net/24rQ/hibvdkou",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-31",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "8/10",
+      "views": 0
+    },
+    {
+      "slug": "break-ypur-bones-script",
+      "title": "Break Your Bones",
+      "short": "",
+      "category": "simulator",
+      "tags": [
+        "executor-required",
+        "mobile"
+      ],
+      "features": [
+        "Auto Farm"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/a2c398bd-4ca9-410f-ae60-924e7331af42.png",
+      "workink_url": "https://workink.net/24rQ/a7ubje67",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-31",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "7/10",
+      "views": 0
+    },
+    {
+      "slug": "hunty-zombie",
+      "title": "Hunty Zombie",
+      "short": "",
+      "category": "fighting",
+      "tags": [
+        "mobile"
+      ],
+      "features": [
+        "ESP",
+        "Auto Farm",
+        "Teleport",
+        "Noclip",
+        "Auto Collect"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/5ff02f52-4084-49a3-a1d6-461b14560d4f.png",
+      "workink_url": "https://workink.net/24rQ/qh4sg7g6",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-31",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "8/10",
+      "views": 0
+    },
+    {
+      "slug": "grow-a-kingdom-script",
+      "title": "Grow a kingdom",
+      "short": "",
+      "category": "simulator",
+      "tags": [
+        "mobile"
+      ],
+      "features": [
+        "Auto Buy",
+        "Auto Sell"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/f2e73611-f9f5-48ba-9a9f-d0b9fc95c883.png",
+      "workink_url": "https://workink.net/24rQ/394kci3w",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-31",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "6/10",
+      "views": 0
+    },
+    {
+      "slug": "murder.mystery-2",
+      "title": "Murder Mystery 2",
+      "short": "",
+      "category": "fighting",
+      "tags": [
+        "executor-required",
+        "mobile"
+      ],
+      "features": [
+        "ESP",
+        "Auto Farm",
+        "Auto Collect",
+        "Teleport"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/726f0209-cfd9-42d4-ae61-bebc69c7fda9.png",
+      "workink_url": "https://workink.net/24rQ/aprn8ghd",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-31",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "7/10",
+      "views": 0
+    },
+    {
+      "slug": "99-nights-in-the-forest-script",
+      "title": "99 Nights In The Forest",
+      "short": "",
+      "category": "adventure",
+      "tags": [
+        "mobile",
+        "executor-required"
+      ],
+      "features": [
+        "ESP",
+        "Auto Farm",
+        "Auto Collect",
+        "Teleport",
+        "Speed"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/800980f3-efaa-42f3-9c15-9c191e0a1f31.jpg",
+      "workink_url": "https://workink.net/24rQ/zzifdajs",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-31",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "7/10",
+      "views": 0
+    },
+    {
+      "slug": "resturant-tycoon-3-script",
+      "title": "Resturan Tycoon 3",
+      "short": "",
+      "category": "tycoon",
+      "tags": [
+        "executor-required",
+        "mobile"
+      ],
+      "features": [
+        "Auto Farm",
+        "Auto Collect"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/77f02594-14d2-4529-ac1d-97d4316462bd.png",
+      "workink_url": "https://workink.net/24rQ/i2sa1u10",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-31",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "7/10",
+      "views": 0
+    },
+    {
+      "slug": "forsaken-script",
+      "title": "Forsaken",
+      "short": "",
+      "category": "fighting",
+      "tags": [
+        "executor-required",
+        "mobile"
+      ],
+      "features": [
+        "ESP",
+        "Speed",
+        "Fly",
+        "Noclip",
+        "Auto Collect"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/38f1e14c-be67-4fa4-b03d-9cb462e4404c.png",
+      "workink_url": "https://workink.net/24rQ/6b4l4n1v",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-10-31",
+      "updated_at": "2025-10-31",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "8/10",
+      "views": 0
+    },
+    {
+      "slug": "jump-and-splash",
+      "title": "Jump And Splash",
+      "short": "",
+      "category": "simulator",
+      "tags": [
+        "no-key",
+        "mobile"
+      ],
+      "features": [
+        "Auto Farm",
+        "Auto Collect",
+        "God Mode"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/05cf3fad-c7f7-4862-9502-d815ed9fafa6.png",
+      "workink_url": "https://workink.net/24rQ/kqx03t27",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-11-01",
+      "updated_at": "2025-11-01",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "7/10",
+      "views": 0
+    },
+    {
+      "slug": "prison-life-script",
+      "title": "Prison Life",
+      "short": "",
+      "category": "simulator",
+      "tags": [
+        "no-key",
+        "mobile",
+        "executor-required"
+      ],
+      "features": [
+        "ESP",
+        "Aimbot",
+        "Speed",
+        "Noclip"
+      ],
+      "thumbnail": "http://localhost:5174/images/scripts/4455d4e8-87af-4eaa-b600-fca67962cf7e.png",
+      "workink_url": "https://workink.net/24rQ/g021ja54",
+      "status": "active",
+      "compatibility": {
+        "pc": true,
+        "mobile": false,
+        "executor_required": true
+      },
+      "version": "1.0.0",
+      "release_date": "2025-11-04",
+      "updated_at": "2025-11-04",
+      "seo": {
+        "title": "",
+        "description": "",
+        "keywords": []
+      },
+      "description": "7/10",
+      "views": 0
+    }
+  ]
+}
