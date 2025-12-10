@@ -204,7 +204,10 @@ export const createDefaultState = () => {
         timestamp: '2025-10-09T09:50:00.000Z',
         message: 'Script "Auto Rob Hub" published'
       }
-    ]
+    ],
+    // Key management system
+    keyPools: {}, // Format: { "1-day": ["key1", "key2"], "7-day": ["key3"], ... }
+    userKeys: [] // Format: [{ id, userId, key, productType, duration, orderId, assignedAt, expiresAt }]
   };
 };
 

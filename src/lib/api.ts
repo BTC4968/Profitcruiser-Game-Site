@@ -309,3 +309,85 @@ export const updateRobuxSettings = (token: string, settings: Partial<RobuxSettin
     token
   });
 
+// Key Management APIs
+export interface UserKey {
+  id: string;
+  userId: string;
+  key: string;
+  productType: string;
+  duration: string;
+  orderId: string;
+  assignedAt: string;
+  expiresAt: string;
+}
+
+export interface KeyProduct {
+  id: string;
+  productType: string;
+  duration: string;
+  price: number;
+  currency: string;
+  description: string;
+  inStock: boolean;
+  stockCount: number;
+}
+
+export const fetchUserKeys = (token: string) =>
+  request<{ keys: UserKey[] }>('/api/keys', { token });
+
+export const fetchKeyProducts = () =>
+  request<{ products: KeyProduct[] }>('/api/keys/products');
+
+export const createKeyOrder = (
+  token: string,
+  payload: {
+    amount: number;
+    currency?: string;
+    product: string;
+    productType: string;
+    duration: string;
+    paymentMethod?: string | null;
+  }
+) =>
+  request<RobuxOrderResponse>('/api/orders', {
+    method: 'POST',
+    body: payload,
+    token
+  });
+
+// Admin Key Management APIs
+export interface KeyPoolStats {
+  pools: Record<string, { available: number; keys: string[] }>;
+  assignedStats: Record<string, number>;
+  totalAssigned: number;
+}
+
+export const fetchAdminKeyStats = (token: string) =>
+  request<KeyPoolStats>('/api/admin/keys', { token });
+
+export const addKeysToPool = (
+  token: string,
+  payload: {
+    productType: string;
+    duration: string;
+    keys: string[];
+  }
+) =>
+  request<{ poolKey: string; added: number; duplicates: number; totalInPool: number }>('/api/admin/keys/add', {
+    method: 'POST',
+    body: payload,
+    token
+  });
+
+export const fetchKeyPool = (token: string, poolKey: string) =>
+  request<{ poolKey: string; keys: string[]; count: number }>(`/api/admin/keys/pool/${encodeURIComponent(poolKey)}`, {
+    token
+  });
+
+export const removeKeyFromPool = (token: string, poolKey: string, keyToRemove: string) =>
+  request<{ message: string; poolKey: string; remaining: number }>(`/api/admin/keys/pool/${encodeURIComponent(poolKey)}`, {
+    method: 'DELETE',
+    body: { keyToRemove },
+    token
+  });
+

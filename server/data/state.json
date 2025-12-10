@@ -516,6 +516,31 @@
         "createdAt": "2025-11-01T19:59:12.739Z",
         "updatedAt": "2025-11-01T19:59:12.739Z"
       }
+    },
+    {
+      "id": "#24884",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "amount": 19.99,
+      "currency": "EUR",
+      "product": "7 Days Premium Access",
+      "robuxAmount": null,
+      "productType": "premium",
+      "duration": "7 days",
+      "status": "pending",
+      "createdAt": "2025-12-05T01:17:44.002Z",
+      "payment": {
+        "provider": "nowpayments-eth",
+        "providerLabel": "NOWPayments (Ethereum)",
+        "invoiceId": "5307089074",
+        "invoiceUrl": "https://nowpayments.io/payment/?iid=5307089074",
+        "status": "waiting",
+        "payCurrency": "ETH",
+        "payAmount": null,
+        "actuallyPaid": null,
+        "createdAt": "2025-12-05T01:17:44.002Z",
+        "updatedAt": "2025-12-05T01:17:44.002Z"
+      }
     }
   ],
   "chats": [
@@ -1016,6 +1041,30 @@
           "createdAt": "2025-11-01T19:59:13.291Z"
         }
       ]
+    },
+    {
+      "id": "3f52c347-2235-4fac-8e86-43c9bdb689bd",
+      "orderId": "#24884",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "username": "Admin",
+      "status": "open",
+      "createdAt": "2025-12-05T01:17:47.178Z",
+      "lastActivityAt": "2025-12-05T01:17:47.178Z",
+      "responseMinutes": null,
+      "messages": [
+        {
+          "id": "edf13666-2eae-494b-b7e6-05e6a02b2430",
+          "author": "system",
+          "body": "Chat opened for order #24884",
+          "createdAt": "2025-12-05T01:17:47.178Z"
+        },
+        {
+          "id": "54a719fa-ec47-4cb6-8545-b148a3162aff",
+          "author": "system",
+          "body": "Follow these instructions to add a gamepass: https://www.youtube.com/watch?v=Hl9QPHIXWHk",
+          "createdAt": "2025-12-05T01:17:47.178Z"
+        }
+      ]
     }
   ],
   "users": [
@@ -1026,7 +1075,7 @@
       "passwordHash": "9a4aabf0e5cf71cae2cea646613ce7e2a5919fa758e56819704be25a3a2c1f0b",
       "role": "admin",
       "createdAt": "2025-10-21T16:22:58.606Z",
-      "lastLoginAt": "2025-12-04T23:02:31.603Z"
+      "lastLoginAt": "2025-12-09T19:25:46.050Z"
     },
     {
       "id": "0d406d80-ac00-4ed0-9236-97df0282a793",
@@ -1224,6 +1273,18 @@
       "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
       "createdAt": "2025-12-04T23:02:31.603Z",
       "expiresAt": "2025-12-11T23:02:31.603Z"
+    },
+    {
+      "token": "72c7ff44-0848-4546-b8f3-20273901730b3eeba1bb-13d3-4092-8a4e-53bffe34b123",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-12-08T21:37:36.219Z",
+      "expiresAt": "2025-12-15T21:37:36.219Z"
+    },
+    {
+      "token": "ecf5ff31-8371-415c-bdce-1fef2fb398e6ad1c0742-6d99-4781-9dae-08c1b7657f47",
+      "userId": "cdc843e3-f495-4f0f-b47f-3fbd1b9ed888",
+      "createdAt": "2025-12-09T19:25:46.050Z",
+      "expiresAt": "2025-12-16T19:25:46.050Z"
     }
   ],
   "scriptVisibility": {},
@@ -2261,6 +2322,41 @@
     {
       "id": "07c5be78-687d-4361-a000-b402a8865d4f",
       "timestamp": "2025-12-04T23:02:31.603Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "89a64101-69e2-4dbe-bf42-64564e010ad1",
+      "timestamp": "2025-12-05T01:15:19.474Z",
+      "message": "Added 1 keys to pool premium-7 days (0 duplicates skipped)"
+    },
+    {
+      "id": "2e62c62b-763b-44b9-bf8b-76fd6b30dae7",
+      "timestamp": "2025-12-05T01:17:47.178Z",
+      "message": "Order #24884 awaiting payment via NOWPayments (Ethereum) (ETH) from Admin"
+    },
+    {
+      "id": "5c3c0cc0-4698-48b6-b317-718a211a2bc0",
+      "timestamp": "2025-12-05T01:17:47.178Z",
+      "message": "NOWPayments (Ethereum) invoice created for order #24884"
+    },
+    {
+      "id": "dfb0d641-da42-4048-96d8-265b0a27c8fc",
+      "timestamp": "2025-12-05T01:17:47.178Z",
+      "message": "Chat opened (Order #24884)"
+    },
+    {
+      "id": "54507080-5e27-4a3c-974f-3af5dcdfee42",
+      "timestamp": "2025-12-08T21:37:36.219Z",
+      "message": "User Admin logged in"
+    },
+    {
+      "id": "907425d7-31c5-4a84-8ed3-553d97e55341",
+      "timestamp": "2025-12-09T19:15:19.292Z",
+      "message": "Added 1 keys to pool 1 day (0 duplicates skipped)"
+    },
+    {
+      "id": "1609e675-3d62-419e-b764-3201ff058096",
+      "timestamp": "2025-12-09T19:25:46.050Z",
       "message": "User Admin logged in"
     }
   ],
@@ -3332,5 +3428,13 @@
       "description": "7/10",
       "views": 0
     }
-  ]
+  ],
+  "keyPools": {
+    "premium-7 days": [
+      "dsfa-2343-sdafsdfa"
+    ],
+    "1 day": [
+      "sdfasf-5340-sgsygf0452423-4wsdfsd"
+    ]
+  }
 }

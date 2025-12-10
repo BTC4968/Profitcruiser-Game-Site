@@ -183,6 +183,11 @@ const Index = () => {
                           Robux
                         </Link>
                       </DropdownMenuItem>
+                      <DropdownMenuItem asChild>
+                        <Link to="/keys" className="w-full">
+                          Key Store
+                        </Link>
+                      </DropdownMenuItem>
                       <DropdownMenuSeparator />
                       {user ? (
                         <DropdownMenuItem asChild>

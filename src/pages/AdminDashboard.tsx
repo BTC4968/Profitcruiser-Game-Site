@@ -38,6 +38,7 @@ import { EditScriptDialog } from '@/components/EditScriptDialog';
 import { DeleteScriptDialog } from '@/components/DeleteScriptDialog';
 import { RobuxSettingsDialog } from '@/components/RobuxSettingsDialog';
 import AdminChatManager from '@/components/AdminChatManager';
+import KeyManager from '@/components/KeyManager';
 import { toast } from 'sonner';
 
 const formatDate = (value: string | null) => {
@@ -564,6 +565,8 @@ const AdminDashboard = () => {
             </div>
           </div>
         </section>
+
+        <KeyManager />
 
         <section className="glass-card rounded-2xl border border-border/60 p-6">
           <div className="flex items-center justify-between mb-6">

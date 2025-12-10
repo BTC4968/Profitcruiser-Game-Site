@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Index from './pages/Index';
 import ScriptDetail from './pages/ScriptDetail';
 import Robux from './pages/Robux';
+import KeyStore from './pages/KeyStore';
 import NotFound from './pages/NotFound';
 import Login from './pages/Login';
 import Register from './pages/Register';
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/scripts/:slug" element={<ScriptDetail />} />
           <Route path="/robux" element={<Robux />} />
+          <Route path="/keys" element={<KeyStore />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route

@@ -1,11 +1,17 @@
 import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
-import { fetchUserChats, fetchUserOrders } from '@/lib/api';
+import { fetchUserChats, fetchUserOrders, fetchUserKeys } from '@/lib/api';
 import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Key, Copy, CheckCircle, Clock } from 'lucide-react';
+import { useState } from 'react';
+import { toast } from 'sonner';
 
 const Account = () => {
   const { token, user, logout } = useAuth();
+  const [copiedKey, setCopiedKey] = useState<string | null>(null);
 
   const { data: orderData } = useQuery({
     queryKey: ['orders'],
@@ -18,6 +24,23 @@ const Account = () => {
     enabled: Boolean(token),
     queryFn: () => fetchUserChats(token ?? '')
   });
+
+  const { data: keysData } = useQuery({
+    queryKey: ['keys'],
+    enabled: Boolean(token),
+    queryFn: () => fetchUserKeys(token ?? '')
+  });
+
+  const copyToClipboard = (key: string) => {
+    navigator.clipboard.writeText(key);
+    setCopiedKey(key);
+    toast.success('Key copied to clipboard!');
+    setTimeout(() => setCopiedKey(null), 2000);
+  };
+
+  const isKeyExpired = (expiresAt: string) => {
+    return new Date(expiresAt) < new Date();
+  };
 
   const formatOrderStatus = (status: string) => {
     switch (status) {
@@ -160,6 +183,84 @@ const Account = () => {
               </tbody>
             </table>
           </div>
+        </section>
+
+        <section className="glass-card border border-border/60 rounded-2xl p-8">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-2xl font-semibold">My Keys</h2>
+            <Link to="/keys" className="text-sm text-primary hover:underline">
+              Buy More Keys
+            </Link>
+          </div>
+
+          {keysData?.keys && keysData.keys.length > 0 ? (
+            <div className="grid md:grid-cols-2 gap-4">
+              {keysData.keys.map((userKey) => {
+                const expired = isKeyExpired(userKey.expiresAt);
+                return (
+                  <Card
+                    key={userKey.id}
+                    className={`border ${
+                      expired ? 'border-destructive/50 opacity-60' : 'border-border/60'
+                    }`}
+                  >
+                    <CardHeader>
+                      <div className="flex items-center justify-between">
+                        <CardTitle className="text-lg flex items-center gap-2">
+                          <Key className="w-5 h-5 text-primary" />
+                          {userKey.duration} - {userKey.productType}
+                        </CardTitle>
+                        {expired ? (
+                          <Badge variant="destructive">Expired</Badge>
+                        ) : (
+                          <Badge variant="secondary" className="flex items-center gap-1">
+                            <CheckCircle className="w-3 h-3" />
+                            Active
+                          </Badge>
+                        )}
+                      </div>
+                      <CardDescription>
+                        Order: {userKey.orderId} • Assigned: {new Date(userKey.assignedAt).toLocaleDateString()}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-3">
+                        <div className="flex items-center justify-between p-3 bg-background/50 rounded-lg border border-border/40">
+                          <code className="text-sm font-mono flex-1 break-all">{userKey.key}</code>
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            onClick={() => copyToClipboard(userKey.key)}
+                            className="ml-2 shrink-0"
+                          >
+                            {copiedKey === userKey.key ? (
+                              <CheckCircle className="w-4 h-4 text-primary" />
+                            ) : (
+                              <Copy className="w-4 h-4" />
+                            )}
+                          </Button>
+                        </div>
+                        <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                          <Clock className="w-3 h-3" />
+                          <span>
+                            {expired ? 'Expired' : 'Expires'}: {new Date(userKey.expiresAt).toLocaleString()}
+                          </span>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
+          ) : (
+            <div className="rounded-xl border border-border/60 bg-background/80 px-4 py-8 text-center">
+              <Key className="w-12 h-12 mx-auto mb-4 text-muted-foreground" />
+              <p className="text-muted-foreground mb-4">You don't have any keys yet.</p>
+              <Button asChild>
+                <Link to="/keys">Browse Key Store</Link>
+              </Button>
+            </div>
+          )}
         </section>
 
         <section className="glass-card border border-border/60 rounded-2xl p-8">

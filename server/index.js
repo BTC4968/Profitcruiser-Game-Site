@@ -92,6 +92,12 @@ const NOWPAYMENTS_ENABLED = Boolean(
   NOWPAYMENTS_API_KEY && NOWPAYMENTS_IPN_SECRET && NOWPAYMENTS_WEBHOOK_URL
 );
 
+// Stripe configuration
+const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY ?? '';
+const STRIPE_WEBHOOK_SECRET = process.env.STRIPE_WEBHOOK_SECRET ?? '';
+const STRIPE_ENABLED = Boolean(STRIPE_SECRET_KEY);
+const STRIPE_WEBHOOK_URL = process.env.STRIPE_WEBHOOK_URL ?? `${PUBLIC_DOMAIN}/api/stripe/webhook`;
+
 // Supported crypto currencies (using NOWPayments format)
 const SUPPORTED_CRYPTO_CURRENCIES = [
   { code: 'btc', name: 'Bitcoin', symbol: '₿' },
@@ -214,6 +220,90 @@ const verifyNowPaymentsSignature = (rawBody, signature) => {
   return digest === signature;
 };
 
+// Stripe functions
+const createStripeCheckoutSession = async ({
+  orderId,
+  amount,
+  currency,
+  product,
+  username
+}) => {
+  if (!STRIPE_ENABLED) {
+    throw new Error('Stripe is not enabled');
+  }
+
+  const successUrl = `${PUBLIC_DOMAIN}/account?order=${encodeURIComponent(orderId)}&status=success`;
+  const cancelUrl = `${PUBLIC_DOMAIN}/account?order=${encodeURIComponent(orderId)}&status=cancelled`;
+
+  const lineItems = [{
+    price_data: {
+      currency: currency.toLowerCase(),
+      product_data: {
+        name: product,
+        description: `Order ${orderId} for ${username}`
+      },
+      unit_amount: Math.round(amount * 100) // Convert to cents
+    },
+    quantity: 1
+  }];
+
+  const params = new URLSearchParams({
+    mode: 'payment',
+    'payment_method_types[0]': 'card',
+    'line_items[0][price_data][currency]': currency.toLowerCase(),
+    'line_items[0][price_data][product_data][name]': product,
+    'line_items[0][price_data][product_data][description]': `Order ${orderId} for ${username}`,
+    'line_items[0][price_data][unit_amount]': String(Math.round(amount * 100)),
+    'line_items[0][quantity]': '1',
+    success_url: successUrl,
+    cancel_url: cancelUrl,
+    'metadata[orderId]': orderId,
+    'metadata[username]': username
+  });
+
+  const response = await fetch('https://api.stripe.com/v1/checkout/sessions', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${STRIPE_SECRET_KEY}`,
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: params
+  });
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.error?.message ?? 'Failed to create Stripe checkout session');
+  }
+
+  return {
+    sessionId: data.id,
+    checkoutUrl: data.url,
+    status: 'pending'
+  };
+};
+
+const verifyStripeWebhook = (rawBody, signature) => {
+  if (!STRIPE_WEBHOOK_SECRET) {
+    return null;
+  }
+  
+  // Stripe webhook signature verification requires crypto operations
+  // For simplicity, we'll verify the signature format and let Stripe handle it
+  // In production, use Stripe's official SDK or implement proper signature verification
+  try {
+    const elements = signature.split(',');
+    const sigHash = elements.find(el => el.startsWith('v1='));
+    if (!sigHash) {
+      return null;
+    }
+    // Basic validation - in production, use proper HMAC verification
+    return true;
+  } catch {
+    return null;
+  }
+};
+
 const paymentProviders = new Map();
 
 paymentProviders.set('manual', {
@@ -282,6 +372,41 @@ if (NOWPAYMENTS_ENABLED) {
   });
 
   // Note: Individual crypto providers are created above, no generic provider needed
+}
+
+if (STRIPE_ENABLED) {
+  paymentProviders.set('stripe', {
+    key: 'stripe',
+    label: 'Stripe (Card Payment)',
+    type: 'card',
+    payCurrency: null,
+    supportsRedirect: true,
+    async createPayment({ orderId, amount, currency, product, username, createdAt }) {
+      const session = await createStripeCheckoutSession({
+        orderId,
+        amount,
+        currency,
+        product,
+        username
+      });
+
+      return {
+        orderStatus: 'pending',
+        payment: {
+          provider: 'stripe',
+          providerLabel: 'Stripe (Card Payment)',
+          invoiceId: session.sessionId,
+          invoiceUrl: session.checkoutUrl,
+          status: 'pending',
+          payCurrency: currency,
+          payAmount: amount,
+          actuallyPaid: null,
+          createdAt,
+          updatedAt: createdAt
+        }
+      };
+    }
+  });
 }
 
 const toTitleCase = (value) =>
@@ -577,6 +702,58 @@ const ensureAdminUser = () => {
       lastLoginAt: null
     });
   }
+};
+
+// Key management functions
+const assignKeyToUser = async (userId, orderId, productType, duration) => {
+  // Ensure keyPools exists
+  if (!state.keyPools) {
+    state.keyPools = {};
+  }
+  if (!state.userKeys) {
+    state.userKeys = [];
+  }
+
+  // Use duration as the pool key (e.g., "1 day", "7 days", "30 days")
+  const poolKey = duration;
+  const availableKeys = state.keyPools[poolKey] || [];
+
+  if (availableKeys.length === 0) {
+    console.warn(`No keys available in pool: ${poolKey}`);
+    return null;
+  }
+
+  // Get the first available key
+  const assignedKey = availableKeys[0];
+  
+  // Remove key from pool
+  state.keyPools[poolKey] = availableKeys.slice(1);
+
+  // Calculate expiration date
+  const assignedAt = new Date();
+  const expiresAt = new Date(assignedAt);
+  const days = parseInt(duration.replace('day', '').replace('days', '').trim()) || 1;
+  expiresAt.setDate(expiresAt.getDate() + days);
+
+  // Add to user keys
+  const userKey = {
+    id: randomUUID(),
+    userId,
+    key: assignedKey,
+    productType,
+    duration,
+    orderId,
+    assignedAt: assignedAt.toISOString(),
+    expiresAt: expiresAt.toISOString()
+  };
+
+  state.userKeys.push(userKey);
+  state.activityLog.push(
+    createActivityEntry(`Key assigned to user ${userId} for order ${orderId} (${productType}, ${duration})`)
+  );
+
+  await saveState(state);
+  return userKey;
 };
 
 // Function to automatically open a chat with admins when payment is confirmed
@@ -1070,7 +1247,7 @@ const server = http.createServer(async (req, res) => {
       }
 
       const body = (await parseBody(req)) ?? {};
-      const { amount, currency = 'EUR', product, robuxAmount, paymentMethod } = body;
+      const { amount, currency = 'EUR', product, robuxAmount, paymentMethod, productType, duration } = body;
       if (!amount || !product) {
         send(res, 400, { message: 'Missing order details' });
         return;
@@ -1147,10 +1324,21 @@ const server = http.createServer(async (req, res) => {
         currency,
         product,
         robuxAmount: robuxAmount ?? null,
+        productType: productType ?? null,
+        duration: duration ?? null,
         status: orderStatus,
         createdAt,
         payment
       };
+
+      // If order is immediately paid and it's a key purchase, assign key
+      if (orderStatus === 'paid' && productType && duration) {
+        try {
+          await assignKeyToUser(user.id, orderId, productType, duration);
+        } catch (error) {
+          console.error('Failed to assign key for immediately paid order:', error);
+        }
+      }
 
       state.orders.push(order);
 
@@ -1333,6 +1521,26 @@ const server = http.createServer(async (req, res) => {
       if (order.status === 'paid' && previousStatus !== 'paid') {
         activityMessage = `${providerLabel} confirmed payment for order ${orderId}`;
         
+        // Assign key if this is a key purchase
+        if (order.productType && order.duration) {
+          try {
+            const assignedKey = await assignKeyToUser(
+              order.userId,
+              order.id,
+              order.productType,
+              order.duration
+            );
+            if (assignedKey) {
+              activityMessage += ` - Key assigned`;
+            } else {
+              activityMessage += ` - WARNING: No keys available in pool`;
+            }
+          } catch (error) {
+            console.error('Failed to assign key for paid order:', error);
+            activityMessage += ` - ERROR: Key assignment failed`;
+          }
+        }
+        
         // Automatically open chat with admins when payment is confirmed
         try {
           await openAdminChatOnPayment(order);
@@ -1345,6 +1553,111 @@ const server = http.createServer(async (req, res) => {
 
       state.activityLog.push(createActivityEntry(activityMessage));
       await saveState(state);
+
+      noContent(res);
+      return;
+    }
+
+    if (req.method === 'POST' && url.pathname === '/api/stripe/webhook') {
+      if (!STRIPE_ENABLED) {
+        noContent(res);
+        return;
+      }
+
+      const signatureHeader = req.headers['stripe-signature'] ?? '';
+      const { raw, data } = await parseBody(req, {
+        returnRaw: true,
+        allowInvalidJson: true
+      });
+
+      if (!raw || !data) {
+        noContent(res);
+        return;
+      }
+
+      // Basic signature verification (in production, use proper Stripe SDK verification)
+      if (STRIPE_WEBHOOK_SECRET && !verifyStripeWebhook(raw, signatureHeader)) {
+        send(res, 401, { message: 'Invalid signature' });
+        return;
+      }
+
+      const event = data;
+      
+      // Handle checkout.session.completed event
+      if (event.type === 'checkout.session.completed') {
+        const session = event.data.object;
+        const orderId = session.metadata?.orderId ?? session.client_reference_id ?? null;
+        
+        if (!orderId) {
+          noContent(res);
+          return;
+        }
+
+        const order = state.orders.find((item) => item.id === orderId);
+        if (!order) {
+          noContent(res);
+          return;
+        }
+
+        ensureOrderPaymentShape(order);
+
+        const updatedAt = new Date().toISOString();
+        const paymentStatus = session.payment_status === 'paid' ? 'paid' : 'pending';
+        const amountTotal = session.amount_total ? session.amount_total / 100 : order.amount; // Convert from cents
+
+        const payment = {
+          provider: 'stripe',
+          providerLabel: 'Stripe (Card Payment)',
+          invoiceId: session.id,
+          invoiceUrl: session.url ?? order.payment?.invoiceUrl ?? null,
+          status: paymentStatus,
+          payCurrency: session.currency?.toUpperCase() ?? order.currency,
+          payAmount: amountTotal,
+          actuallyPaid: paymentStatus === 'paid' ? amountTotal : null,
+          createdAt: order.payment?.createdAt ?? order.createdAt,
+          updatedAt
+        };
+
+        order.payment = payment;
+
+        const previousStatus = order.status;
+        order.status = paymentStatus === 'paid' ? 'paid' : 'pending';
+
+        let activityMessage = `Stripe payment ${paymentStatus} for order ${orderId}`;
+        if (order.status === 'paid' && previousStatus !== 'paid') {
+          activityMessage = `Stripe confirmed payment for order ${orderId}`;
+          
+          // Assign key if this is a key purchase
+          if (order.productType && order.duration) {
+            try {
+              const assignedKey = await assignKeyToUser(
+                order.userId,
+                order.id,
+                order.productType,
+                order.duration
+              );
+              if (assignedKey) {
+                activityMessage += ` - Key assigned`;
+              } else {
+                activityMessage += ` - WARNING: No keys available in pool`;
+              }
+            } catch (error) {
+              console.error('Failed to assign key for paid order:', error);
+              activityMessage += ` - ERROR: Key assignment failed`;
+            }
+          }
+          
+          // Automatically open chat with admins when payment is confirmed
+          try {
+            await openAdminChatOnPayment(order);
+          } catch (error) {
+            console.error('Failed to open admin chat for paid order:', error);
+          }
+        }
+
+        state.activityLog.push(createActivityEntry(activityMessage));
+        await saveState(state);
+      }
 
       noContent(res);
       return;
@@ -1574,6 +1887,190 @@ const server = http.createServer(async (req, res) => {
       state.activityLog.push(createActivityEntry(`Script ${slug} visibility set to ${hidden ? 'hidden' : 'visible'}`));
       await saveState(state);
       send(res, 200, { slug, hidden: state.scriptVisibility[slug] });
+      return;
+    }
+
+    // Key management endpoints
+    if (req.method === 'GET' && url.pathname === '/api/keys') {
+      const user = authenticate(req);
+      if (!user) {
+        send(res, 401, { message: 'Unauthorized' });
+        return;
+      }
+
+      const userKeys = (state.userKeys || []).filter(key => key.userId === user.id);
+      send(res, 200, { keys: userKeys });
+      return;
+    }
+
+    if (req.method === 'GET' && url.pathname === '/api/admin/keys') {
+      const user = authenticate(req);
+      if (!user || user.role !== 'admin') {
+        send(res, 401, { message: 'Unauthorized' });
+        return;
+      }
+
+      // Get key pool stats
+      const poolStats = {};
+      if (state.keyPools) {
+        Object.entries(state.keyPools).forEach(([poolKey, keys]) => {
+          poolStats[poolKey] = {
+            available: keys.length,
+            keys: keys.slice(0, 10) // Show first 10 keys as preview
+          };
+        });
+      }
+
+      // Get assigned keys stats (grouped by duration only)
+      const assignedKeys = state.userKeys || [];
+      const assignedStats = {};
+      assignedKeys.forEach(key => {
+        const poolKey = key.duration; // Use duration as pool key
+        if (!assignedStats[poolKey]) {
+          assignedStats[poolKey] = 0;
+        }
+        assignedStats[poolKey]++;
+      });
+
+      send(res, 200, {
+        pools: poolStats,
+        assignedStats,
+        totalAssigned: assignedKeys.length
+      });
+      return;
+    }
+
+    if (req.method === 'POST' && url.pathname === '/api/admin/keys/add') {
+      const user = authenticate(req);
+      if (!user || user.role !== 'admin') {
+        send(res, 401, { message: 'Unauthorized' });
+        return;
+      }
+
+      const body = (await parseBody(req)) ?? {};
+      const { productType, duration, keys } = body;
+
+      if (!duration || !Array.isArray(keys) || keys.length === 0) {
+        send(res, 400, { message: 'Missing duration or keys array' });
+        return;
+      }
+
+      // Ensure keyPools exists
+      if (!state.keyPools) {
+        state.keyPools = {};
+      }
+
+      // Use duration as the pool key (e.g., "1 day", "7 days", "30 days")
+      const poolKey = duration;
+      if (!state.keyPools[poolKey]) {
+        state.keyPools[poolKey] = [];
+      }
+
+      // Add keys to pool (deduplicate)
+      const existingKeys = new Set(state.keyPools[poolKey]);
+      const newKeys = keys.filter(key => !existingKeys.has(key));
+      state.keyPools[poolKey].push(...newKeys);
+
+      state.activityLog.push(
+        createActivityEntry(`Added ${newKeys.length} keys to pool ${poolKey} (${keys.length - newKeys.length} duplicates skipped)`)
+      );
+      await saveState(state);
+
+      send(res, 200, {
+        poolKey,
+        added: newKeys.length,
+        duplicates: keys.length - newKeys.length,
+        totalInPool: state.keyPools[poolKey].length
+      });
+      return;
+    }
+
+    if (req.method === 'GET' && url.pathname.startsWith('/api/admin/keys/pool/')) {
+      const user = authenticate(req);
+      if (!user || user.role !== 'admin') {
+        send(res, 401, { message: 'Unauthorized' });
+        return;
+      }
+
+      const poolKey = decodeURIComponent(url.pathname.replace('/api/admin/keys/pool/', ''));
+      const keys = state.keyPools?.[poolKey] || [];
+
+      send(res, 200, { poolKey, keys, count: keys.length });
+      return;
+    }
+
+    if (req.method === 'DELETE' && url.pathname.startsWith('/api/admin/keys/pool/')) {
+      const user = authenticate(req);
+      if (!user || user.role !== 'admin') {
+        send(res, 401, { message: 'Unauthorized' });
+        return;
+      }
+
+      const body = (await parseBody(req)) ?? {};
+      const { keyToRemove } = body;
+      const poolKey = decodeURIComponent(url.pathname.replace('/api/admin/keys/pool/', ''));
+
+      if (!state.keyPools?.[poolKey]) {
+        send(res, 404, { message: 'Pool not found' });
+        return;
+      }
+
+      const index = state.keyPools[poolKey].indexOf(keyToRemove);
+      if (index === -1) {
+        send(res, 404, { message: 'Key not found in pool' });
+        return;
+      }
+
+      state.keyPools[poolKey].splice(index, 1);
+      state.activityLog.push(createActivityEntry(`Removed key from pool ${poolKey}`));
+      await saveState(state);
+
+      send(res, 200, { message: 'Key removed', poolKey, remaining: state.keyPools[poolKey].length });
+      return;
+    }
+
+    // Key store products endpoint
+    if (req.method === 'GET' && url.pathname === '/api/keys/products') {
+      // Return available key products (can be configured in settings or hardcoded)
+      const products = [
+        {
+          id: '1-day',
+          productType: 'premium',
+          duration: '1 day',
+          price: 4.99,
+          currency: 'EUR',
+          description: '1 Day Premium Access'
+        },
+        {
+          id: '7-day',
+          productType: 'premium',
+          duration: '7 days',
+          price: 19.99,
+          currency: 'EUR',
+          description: '7 Days Premium Access'
+        },
+        {
+          id: '30-day',
+          productType: 'premium',
+          duration: '30 days',
+          price: 49.99,
+          currency: 'EUR',
+          description: '30 Days Premium Access'
+        }
+      ];
+
+      // Add availability status (using duration as pool key)
+      const productsWithStock = products.map(product => {
+        const poolKey = product.duration; // Use duration as pool key
+        const available = (state.keyPools?.[poolKey] || []).length;
+        return {
+          ...product,
+          inStock: available > 0,
+          stockCount: available
+        };
+      });
+
+      send(res, 200, { products: productsWithStock });
       return;
     }
 

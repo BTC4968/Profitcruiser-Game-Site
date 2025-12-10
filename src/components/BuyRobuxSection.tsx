@@ -24,6 +24,7 @@ import {
   SelectValue
 } from '@/components/ui/select';
 import { CryptoPaymentSelector } from '@/components/CryptoPaymentSelector';
+import { CardPaymentSelector } from '@/components/CardPaymentSelector';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { toast } from 'sonner';
 
@@ -66,9 +67,14 @@ export const BuyRobuxSection = () => {
 
   const allProviders = providerData?.providers ?? [];
   const cryptoProviders = allProviders.filter(p => p.type === 'crypto');
-  const traditionalProviders = allProviders.filter(p => p.type !== 'crypto');
+  const cardProviders = allProviders.filter(p => p.type === 'card');
+  const traditionalProviders = allProviders.filter(p => p.type !== 'crypto' && p.type !== 'card');
 
-  const currentProviders = paymentTab === 'crypto' ? cryptoProviders : traditionalProviders;
+  const currentProviders = paymentTab === 'crypto' 
+    ? cryptoProviders 
+    : paymentTab === 'card'
+    ? cardProviders
+    : traditionalProviders;
 
   useEffect(() => {
     if (currentProviders.length === 0) {
@@ -309,9 +315,9 @@ export const BuyRobuxSection = () => {
                       <Wallet className="w-4 h-4" />
                       Crypto
                     </TabsTrigger>
-                    <TabsTrigger value="traditional" className="flex items-center gap-2">
+                    <TabsTrigger value="card" className="flex items-center gap-2">
                       <ShieldCheck className="w-4 h-4" />
-                      Coming Soon
+                      Card
                     </TabsTrigger>
                   </TabsList>
                   
@@ -333,35 +339,22 @@ export const BuyRobuxSection = () => {
                     )}
                   </TabsContent>
                   
-                  <TabsContent value="traditional" className="mt-4">
-                    <Select
-                      value={selectedMethod ?? undefined}
-                      onValueChange={(value) => setSelectedMethod(value)}
-                      disabled={traditionalProviders.length === 0}
-                    >
-                      <SelectTrigger className="bg-background/80">
-                        <SelectValue placeholder="Select payment method" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {traditionalProviders.map((provider) => (
-                          <SelectItem key={provider.key} value={provider.key}>
-                            {provider.label}
-                            {provider.payCurrency ? ` · ${provider.payCurrency.toUpperCase()}` : ''}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                    {traditionalProviders.length === 0 ? (
-                      <p className="text-xs text-muted-foreground mt-2">
-                        No traditional payment methods are available. Try crypto payments instead.
-                      </p>
-                    ) : selectedProvider ? (
-                      <p className="text-xs text-muted-foreground mt-2">
-                        {selectedProvider.supportsRedirect
-                          ? 'You will be redirected to payment after ordering.'
-                          : 'Card payment coming soon'}
-                      </p>
-                    ) : null}
+                  <TabsContent value="card" className="mt-4">
+                    {cardProviders.length > 0 ? (
+                      <CardPaymentSelector
+                        selectedMethod={selectedMethod}
+                        onMethodChange={setSelectedMethod}
+                        totalPrice={totalPrice}
+                        currency="EUR"
+                      />
+                    ) : (
+                      <div className="text-center py-8">
+                        <ShieldCheck className="w-8 h-8 mx-auto mb-2 text-muted-foreground" />
+                        <p className="text-sm text-muted-foreground">
+                          Card payments are not available at the moment
+                        </p>
+                      </div>
+                    )}
                   </TabsContent>
                 </Tabs>
               </div>
